@@ -4,6 +4,8 @@
 		display flex
 		justify-content space-between
 		flex-wrap wrap
+		// &:last-child
+		// 	margin-bottom 0
 	&__row_bottom
 		margin-top 50px
 		margin-bottom 0
@@ -266,7 +268,7 @@
 		text-align right
 
 	&__submit
-		margin-top 75px
+		margin-top 40px
 		max-width 280px
 		width 100%
 
@@ -277,8 +279,10 @@
 		letter-spacing -0.05px
 		line-height 1.6
 		text-decoration none
+		tr(color .3s ease)
 		&:hover
 			color darken(#fe2042, 10)
+			tr(color .3s ease)
 
 
 	&__note

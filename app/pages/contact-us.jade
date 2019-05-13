@@ -1,0 +1,24 @@
+extends /blocks/layout-default/layout-support
+
+include /blocks/header/header
+
+include /blocks/main/main
+include /blocks/contact-us/contact-us
+//- include /blocks/hero/hero
+//- include /blocks/cta/cta
+//- include /blocks/how/how
+//- include /blocks/facts/facts
+//- include /blocks/noise/noise
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Thank You!';
+
+block content
+	+header()
+	+main().page__inner
+		+contact-us()
+
+	+footer()
