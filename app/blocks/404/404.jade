@@ -1,0 +1,10 @@
+mixin 404()
+	.not-found&attributes(attributes)
+		.not-found__w
+			.not-found__image
+				img(src='assets/images/general/404.png', srcset='assets/images/general/404@2x.png 2x, assets/images/general/404@3x.png 3x')
+
+			h2.not-found__title Sorry, That Page Doesn’t Exist...
+			.not-found__text
+				p And our search tool is eager to find you many others pages that do, so please try again.
+			a.not-found__link.button(href="#") Go Back

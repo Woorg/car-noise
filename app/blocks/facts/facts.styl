@@ -1,0 +1,73 @@
+.facts
+	background #fff
+	overflow hidden
+	&__in
+		padding-top 60px
+	&__title
+		margin-bottom 40px
+		text-align center
+	&__slider
+		margin-bottom 13px
+		margin-left 45px
+		padding-right 162px
+		max-width 734px
+		+rmin($tM)
+			margin-left 262px
+	&__slider-item
+		margin-bottom 100px
+	&__item
+		margin-bottom 30px
+		display flex
+		letter-spacing 0.23px
+		line-height 1.4
+
+	&__term
+		margin-right 11px
+		max-width 56px
+		width 100%
+		color #0db6ff
+		font-size 18px
+		font-weight 500
+		white-space nowrap
+	&__desc
+		font-size 18px
+		font-weight 400
+
+
+	.slick-arrow
+		top calc(50% - 60px)
+		z-index 1
+		width 49px
+		height 97px
+		background-image url('../images/general/arrow-big@3x.png')
+		background-size cover
+		opacity 1
+		&:before
+			display none
+	.slick-prev
+		display none !important
+	.slick-next
+		right 0
+		&:hover,
+		&:focus
+			background-image url('../images/general/arrow-big@3x.png')
+			background-size cover
+			opacity 1
+		&:hover
+			opacity .8
+
+
+	.slick-dots
+		bottom 39px
+		li
+			button
+				padding 0
+				width 20px
+				height 20px
+				background-color #c8d2e1
+				border-radius 50%
+				&:before
+					display none
+			&.slick-active
+				button
+					background-color #728096

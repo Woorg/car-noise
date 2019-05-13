@@ -1,0 +1,210 @@
+mixin form()
+	.form&attributes(attributes)
+		form(action="" method="post")
+			.form__row
+				.form__field
+					label.form__label(for="email") Email
+					input#email(type="text", value="", placeholder="")
+
+				.form__field.form__field_select
+					label.form__label(for="topic") Topic
+					select#topic.form__select(name="")
+						option(value="select-0") New data request
+						option(value="select-1") List Option 1
+						option(value="select-2") List Option 2
+						option(value="select-3") List Option 3
+						option(value="select-4") List Option 4
+
+					.form__select New data request
+
+					.form__select-list
+						.form__select-item.form__select-item_active New data request
+						.form__select-item List Option 1
+						.form__select-item List Option 2
+						.form__select-item List Option 3
+						.form__select-item List Option 4
+
+			.form__row
+				.form__field.form__field_text
+					label.form__label(for="message") Message
+					textarea#message(name="")
+
+
+			input.form__submit.button(type="submit" value="Send Messages")
+
+mixin form-select-dropdown()
+	.form&attributes(attributes)
+		form(action="" method="post")
+			.form__row
+				.form__field
+					label.form__label(for="email") Email
+					input#email(type="text", value="", placeholder="")
+
+				.form__field.form__field_select.form__field_select-active
+					label.form__label(for="topic") Topic
+					select#topic.form__select(name="")
+						option(value="select-0") New data request
+						option(value="select-1") List Option 1
+						option(value="select-2") List Option 2
+						option(value="select-3") List Option 3
+						option(value="select-4") List Option 4
+
+					.form__select New data request
+
+					.form__select-list
+						.form__select-item.form__select-item_active New data request
+						.form__select-item List Option 1
+						.form__select-item List Option 2
+						.form__select-item List Option 3
+						.form__select-item List Option 4
+
+
+
+
+
+			.form__row
+				.form__field.form__field_text
+					label.form__label(for="message") Message
+					textarea#message(name="")
+
+
+			input.form__submit.button(type="submit" value="Send Messages")
+
+
+mixin form-settings()
+	.form.form_second&attributes(attributes)
+		form(action="" method="post")
+			.form__row
+				.form__field.form__field_checkbox
+					.form__label Units
+					.form__checkbox
+						input#checkbox-metric(type="radio", value="metric" name="units" checked)
+						label.form__label(for="checkbox-metric") Metric
+
+						input#checkbox-imperial(type="radio", value="imperial" name="units")
+						label.form__label(for="checkbox-imperial") Imperial
+
+
+
+			.form__row
+				.form__field
+					label.form__label(for="email") E-mail address
+					input#email(type="text", value="", placeholder="johann92@gmail.com")
+
+			.form__row
+				.form__field.form__field_password
+					label.form__label(for="password") Password
+					input#password(type="password" value="123456" minlength="9" maxlength="12" autocomplete="current-password" required )
+
+			.form__row
+				.form__field.form__field_password
+					label.form__label(for="confirm-password") Confirm password
+					input#confirm-password(type="password" value="123456" minlength="9" maxlength="12" autocomplete="current-password" required )
+
+			.form__row.form__row_bottom
+				a.form__delete(href="#") Delete Account
+				input.form__submit.button(type="submit" value="Save")
+
+
+
+
+mixin form-create-account()
+	.form.form_third&attributes(attributes)
+		form(action="" method="post")
+
+			.form__row
+				.form__field
+					label.form__label(for="email") E-mail address
+					input#email(type="text", value="", placeholder="username@gmail.com")
+
+			.form__row
+				.form__field.form__field_password
+					label.form__label(for="password") Password
+					input#password(type="password" value="11223344" minlength="9" maxlength="12" autocomplete="current-password" required )
+
+			.form__note By signing up  you’re accepting our
+				a.form__note-link(href="#") Terms and Conditions
+
+			.form__submit-w
+				input.form__submit.button(type="submit" value="Sign up")
+
+			.form__row.form__row_bottom
+				.form__text Already have an account?
+				a.form__login(href="#") Login
+
+
+
+
+mixin form-forgot()
+	.form.form_third&attributes(attributes)
+		form(action="" method="post")
+
+			.form__row
+				.form__field
+					label.form__label(for="email") E-mail address
+					input#email(type="text", value="", placeholder="username@gmail.com")
+
+			.form__note.form__note_second Enter the email address associated with your account, and we`ll send you a link to reset your password.
+
+			.form__row.form__row_bottom
+				.form__submit-w
+					input.form__submit.button(type="submit" value="Send")
+
+
+
+mixin form-login()
+	.form.form_fourth&attributes(attributes)
+		form(action="" method="post")
+
+			.form__row
+				.form__field
+					label.form__label(for="email") E-mail address
+					input#email(type="text", value="", placeholder="username@gmail.com")
+
+			.form__row
+				.form__field.form__field_password
+					label.form__label(for="password") Password
+					input#password(type="password" value="11223344" minlength="9" maxlength="12" autocomplete="current-password" required )
+
+			.form__row.form__row_remember
+				.form__radio
+					input#remember(type="checkbox" value="" name="remember" required)
+					label.form__label(for="remember") Remember me
+				a.form__forgot(href="#") Forgot password?
+
+			.form__submit-w
+				input.form__submit.button(type="submit" value="Login")
+
+			.form__row.form__row_bottom
+				.form__text Don’t Have Account Yet?
+				a.form__login(href="#") Sign up Now
+
+
+mixin form-login-error()
+	.form.form_fourth&attributes(attributes)
+		form(action="" method="post")
+
+			.form__row
+				.form__field
+					label.form__label(for="email") E-mail address
+					//- span.form__validation-text Oops, this password is incorrect.
+					input#email(type="text", value="", placeholder="username@gmail.com")
+
+			.form__row
+				.form__field.form__field_password.form__field_error
+					label.form__label(for="password") Password
+					span.form__validation-text Oops, this password is incorrect.
+					input#password(type="password" value="11223344" minlength="9" maxlength="12" autocomplete="current-password" required )
+
+			.form__row.form__row_remember
+				.form__radio
+					input#remember(type="checkbox" value="" name="remember" required)
+					label.form__label(for="remember") Remember me
+				a.form__forgot(href="#") Forgot password?
+
+			.form__submit-w
+				input.form__submit.button(type="submit" value="Login")
+
+			.form__row.form__row_bottom
+				.form__text Don’t Have Account Yet?
+				a.form__login(href="#") Sign up Now

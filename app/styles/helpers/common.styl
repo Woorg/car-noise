@@ -1,0 +1,183 @@
+.page
+	padding-top 70px
+	min-width 872px
+	min-height 100vh
+	display flex
+	flex-direction column
+	background-color #f7f7f7
+	color #626262
+	font-family $m
+	font-size 16px
+	font-weight 500
+	letter-spacing 0.2px
+	// line-height 25px
+	+rmin($tM)
+		max-width 100%
+		width 100%
+	&__inner
+		// flex 0 1 auto
+		flex 1 0 auto
+
+.page_inner
+	// background #fff
+	background #fff
+
+.page_support
+	background #fafafa
+
+.page_auth
+	padding-top 0
+	background #ffffff url('../images/general/login-bg.svg') -230px -130px no-repeat
+	// .page__bg
+	// 	position absolute
+	// 	top 0
+	// 	left 0
+	// 	bottom 0
+
+	// 	// top -130px
+	// 	// left -230px
+	// 	// bottom -100px
+
+	// 	// width 890px
+	// 	width 670px
+	// 	height 100%
+	// 	background url('../images/general/login-bg.svg') -230px -130px no-repeat
+.container
+	margin-right auto
+	margin-left auto
+	padding-left 15px
+	padding-right 15px
+	// width 100%
+	width 872px
+	+r($tM)
+		width 100%
+
+	+rmin($tM)
+		max-width 1356px
+		width 100%
+
+
+.container_text
+	+rmin($tM)
+		// max-width 1048px
+		max-width 1048px
+
+.container_auth
+	// max-width 1164px
+	+rmin($tM)
+		// max-width 1164px
+		max-width 1194px
+
+.title
+	color #2f3437
+	font-size 33px
+	font-weight 500
+	letter-spacing 0.01px
+	line-height 1.3
+
+.title_form
+	color #333333
+	font-size 28px
+	font-weight 400
+	line-height 1.5
+
+.title_second
+	position relative
+	padding-bottom 24px
+	color #000000
+	font-size 40px
+	font-weight 500
+	letter-spacing 0.8px
+	&:after
+		position absolute
+		top 100%
+		left 50%
+		width 34px
+		height 3px
+		content ''
+		background url('../images/general/title-line.png') 50% 0 no-repeat
+
+		transform translateX(-50%)
+
+
+.title_third
+	color #151515
+	font-size 24px
+	font-weight 400
+	letter-spacing 1px
+
+
+.button
+	border none
+	padding-top 18px
+	padding-bottom 15px
+	display inline-block
+	height 60px
+	background-color #0db6ff
+	color #ffffff
+	font-family $m
+	font-size 22px
+	font-weight 500
+	letter-spacing -0.06px
+	line-height 1
+	text-align center
+	text-decoration none
+	border-radius 6px
+	box-shadow 0 2px 4px rgba(0, 0, 0, 0.2)
+	tr(background-color .3s ease)
+	&:hover
+		background-color darken(#0db6ff, 10)
+		tr(background-color .3s ease)
+
+
+.wysiwyg
+	h2,
+	h3
+		margin-top 60px
+
+		margin-bottom 24px
+		color #000000
+		font-size 22px
+		font-weight 400
+		letter-spacing 1px
+		line-height 1.3
+	h2,
+	h3
+		&:first-child
+			margin-top 0
+	h3
+		margin-top 30px
+
+	p
+		margin-top 30px
+		color #817f7f
+		font-size 18px
+		font-weight 400
+		line-height 1.38
+		&:first-child
+			margin-top 0
+			margin-bottom 60px
+
+		&:last-child
+			margin-bottom 0
+
+
+	ul
+		margin-top 30px
+		margin-bottom 35px
+		margin-left 30px
+		li
+			color #817f7f
+			font-size 18px
+			font-weight 400
+			line-height 1.38
+			&:before
+				position relative
+				left -7px
+				content '•'
+				color #817f7f
+				font-size 18px
+				font-weight 400
+				line-height 1.38
+
+

@@ -1,0 +1,37 @@
+include ../form/form
+
+
+mixin contact-us-success()
+	.contact-us&attributes(attributes)
+		.contact-us__w
+			.contact-us__image
+				svg(xmlns='http://www.w3.org/2000/svg', width='205', height='179', viewBox='0 0 205 179')
+					path(fill='#ededed', d='M143.943 154.703L72.96 115.825 194.561 13.813zm-78.792-40.857a3.268 3.268 0 0 0-1.21 2.24l-4.537 38.78-10.053-49.033 110.15-71.137zM10.903 80.993l162.211-62.866L45.582 100.49zM204.012 1.197a3.275 3.275 0 0 0-3.467-.705L2.087 77.405a3.263 3.263 0 0 0-.422 5.887l41.128 23.125 14.274 69.625a3.258 3.258 0 0 0 .654 1.445 3.274 3.274 0 0 0 4.9.262l30.96-30.974a3.26 3.26 0 0 0-.006-4.617 3.276 3.276 0 0 0-4.627.006l-24.319 24.33 5.255-44.907 74.27 40.68a3.272 3.272 0 0 0 4.674-1.817l55.98-155.814a3.26 3.26 0 0 0-.796-3.44z')
+
+				//- img(src='assets/images/general/404.png', srcset='assets/images/general/404@2x.png 2x, assets/images/general/404@3x.png 3x')
+
+			h2.contact-us__title Thank You!
+			.contact-us__text
+				p You have sent your message and we will contact you shortly.
+			a.contact-us__link.button(href="#") Continue
+
+
+
+
+mixin contact-us()
+	.contact-us.contact-us_second&attributes(attributes)
+		.contact-us__w
+
+			h2.contact-us__title Contact us
+
+			+form().contact-us__form
+
+
+
+mixin contact-us-dropdown()
+	.contact-us.contact-us_second&attributes(attributes)
+		.contact-us__w
+
+			h2.contact-us__title Contact us
+
+			+form-select-dropdown().contact-us__form

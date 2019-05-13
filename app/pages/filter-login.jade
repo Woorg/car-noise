@@ -1,0 +1,36 @@
+extends /blocks/layout-default/layout-text
+
+include /blocks/header/header
+
+include /blocks/main/main
+//- include /blocks/404/404
+include /blocks/text/text
+
+include /blocks/filter-page/filter-page
+
+
+include /blocks/filter/filter
+
+include /blocks/content/content
+include /blocks/sidebar/sidebar
+
+//- include /blocks/cta/cta
+//- include /blocks/how/how
+//- include /blocks/facts/facts
+//- include /blocks/noise/noise
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Filter page login';
+
+block content
+	+header-filter-login()
+	+main().container.page__inner
+		+filter-page()
+			+content()
+			+sidebar()
+				+filter()
+
+	+footer()

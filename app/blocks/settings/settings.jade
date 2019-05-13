@@ -1,0 +1,9 @@
+include ../form/form
+
+mixin settings()
+	.settings&attributes(attributes)
+		.settings__w
+			.settings__form-w
+				h2.settings__title.title.title_form My Settings
+
+				+form-settings().settings__form

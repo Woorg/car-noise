@@ -1,0 +1,74 @@
+.header
+	position fixed
+	z-index 2
+	top 0
+	left 0
+	width 100%
+	background #fff
+	// box-shadow 0 2px 3px rgba(0, 0, 0, 0.4)
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.1)
+	&__in
+		padding-top 15px
+		padding-bottom 15px
+		display flex
+		justify-content flex-start
+		align-items center
+	// &__logo
+	// 	margin-right 81px
+	// 	+rmin($tM)
+	// 		margin-right 190px
+	&__nav
+		margin-left 81px
+		// padding-top 11px
+		+r($tS)
+			margin-left 20px
+
+		+rmin($tM)
+			margin-left 190px
+
+	&__h-user
+		margin-left auto
+
+.header_auth
+	position absolute
+	background transparent
+	box-shadow none
+	.header__in
+		padding-top 60px
+		padding-right 54px
+		padding-bottom 60px
+		padding-left 54px
+
+
+
+
+
+.h-user
+	display flex
+	align-items center
+	text-decoration none
+	cursor pointer
+	&__email
+		position relative
+		margin-right 20px
+		padding-right 14px
+		color #616161
+		font-family $m
+		font-size 15px
+		font-weight 500
+		letter-spacing 0.1px
+		&:after
+			position absolute
+			top calc(50% + 1px)
+			width 0
+			height 0
+			content ''
+			border-style solid
+			border-width 4px 4px 0 4px
+			border-color #616161 transparent transparent transparent
+			opacity .75
+			transform translateY(-50%)
+	&__user-pic
+		width 40px
+		height 40px
+		border-radius 50%
