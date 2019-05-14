@@ -1,0 +1,51 @@
+.notification
+	position relative
+	border 2px solid transparent
+	margin-top 30px
+	margin-bottom 30px
+	padding-top 20px
+	padding-left 26px
+	padding-right 60px
+	padding-bottom 20px
+	min-height 68px
+	background-color #ffffff
+	border-radius 3px
+	overflow hidden
+	&__text
+		color #5a6570
+		font-size 16px
+		font-weight 400
+		line-height 1.375
+	&__close
+		position absolute
+		top 24px
+		right 24px
+		resetbutton()
+		width 17px
+		height 17px
+		opacity 1
+		tr(opacity .3s ease)
+		&:hover
+			opacity .8
+			tr(opacity .3s ease)
+	&__icon
+		width 17px
+		height 17px
+
+
+.notification_red
+	border 2px solid #fc4141
+
+.notification_yellow
+	border 2px solid #fedd0b
+
+.notification_green
+	border 2px solid #41eb76
+
+
+.notification_cookie
+	position fixed
+	z-index 2
+	bottom 68px
+	left 52px
+	border 2px solid #fedd0b

@@ -1,0 +1,219 @@
+.results
+	padding-top 42px
+	&__table
+		border-collapse collapse
+		margin-bottom 45px
+		table-layout auto
+		width 100%
+		overflow hidden
+	// &__row
+	// 	display table-row
+	&__row_header
+		border-bottom 2px solid #f5f5f5
+		// .results__fav-icon
+		// 	visibility hidden
+		// .results__details
+		// 	align-items flex-start
+
+		// .results__noise
+		// 	align-items flex-end
+
+		.results__speed
+			vertical-align bottom
+			color #b0b0b0
+			font-size 13px
+			font-weight 500
+			white-space nowrap
+
+	&__row_caption
+		border-bottom none
+		margin-bottom -20px
+		vertical-align bottom
+
+	&__row
+		border-bottom 1px solid #F0F0F0
+		&.results__row_caption
+			border-bottom none
+
+	&__caption
+		vertical-align bottom
+		background #FFF
+		color #9b9b9b
+		font-size 16px
+		font-weight 500
+		text-align center
+	&__caption-w
+		margin-bottom -20px
+
+
+	&__fav
+		// display table-cell
+		padding-left 5px
+		padding-right 5px
+		width 10%
+		vertical-align middle
+		// min-width 64px
+		// width 100%
+		// flex 1 1 64px
+		// flex 1 1 auto
+
+	&__fav-icon
+		margin auto
+		display block
+		width 26px
+		height 24px
+		fill #aeaeae
+		cursor pointer
+
+	&__fav-icon_active
+		fill #ffbc77
+
+	&__details
+		// display table-cell
+		// flex 1 1 190px
+		min-width 190px
+		width 40%
+		// max-width 322px
+		// width 100%
+		// flex 1 1 auto
+		color #8b8b8b
+		font-size 17px
+		font-weight 500
+		// +rmin($tM)
+		// 	max-width 320px
+
+
+	&__noise
+		position relative
+		// display table-cell
+		// display flex
+		// flex 1 1 422px
+		// flex 1 1 auto
+
+
+
+	// &__idle
+
+	&__speed
+		width 20%
+		// display table-cell
+		// flex 1 1 60px
+		// margin-bottom -14px
+		// flex 1 1 auto
+		color #757575
+		font-size 14px
+		font-weight 400
+		text-align center
+
+	&__speed_idle
+		width 10%
+
+
+	&__details-w
+		padding-top 20px
+		padding-bottom 20px
+		font-weight 500
+
+	&__details-model
+		margin-bottom 6px
+		color #4a4a4a
+		font-size 20px
+	&__details-spec
+		color #817f7f
+		font-size 14px
+
+	&__speed-w
+		padding-top 14px
+		padding-right 5px
+		padding-bottom 14px
+		padding-left 5px
+		color #757575
+		font-size 14px
+		font-weight 400
+		// +rmin($tM)
+		// 	padding-right 20px
+		// 	padding-left 20px
+
+	&__row_header th,
+	&__row td
+		position relative
+
+	&__row_header th
+		div
+			position relative
+			z-index 1
+			background #fff
+
+
+	&__row_header
+		th
+			&:not(:empty)
+				&:hover,
+				&:focus
+					&:after
+						position absolute
+						z-index -1
+						top 58px
+						left 0
+						width 100%
+						content ''
+						height 10000px
+						background-color #f3fbff
+						border-top 1px solid #0db6ff
+
+
+
+	&__notfound
+		margin auto
+		margin-top 190px
+		max-width 612px
+		text-align center
+
+	&__notfound-icon
+		margin auto
+		margin-bottom 90px
+
+	&__notfound-title
+		margin-bottom 44px
+		color #1c1c1c
+		font-size 24px
+		font-weight 500
+		letter-spacing 1px
+	&__notfound-text
+		margin-bottom 14px
+		color #313131
+		font-size 24px
+		font-weight 400
+		letter-spacing 1px
+		line-height 1.375
+	&__notfound-link
+		color #0db6ff
+		font-size 24px
+		font-weight 500
+		letter-spacing 1px
+		line-height 1.375
+		text-decoration none
+		tr(color .3s ease)
+		&:hover
+			color darken(#0db6ff, 10)
+			tr(color .3s ease)
+
+	// &__row
+	// 	td
+	// 		&:hover,
+	// 		&:focus
+	// 			&:after
+	// 				position absolute
+	// 				z-index -1
+	// 				top -5000px
+	// 				left 0
+	// 				width 100%
+	// 				content ''
+	// 				height 10000px
+	// 				background-color #f3fbff
+
+
+
+
+
+

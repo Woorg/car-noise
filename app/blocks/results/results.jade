@@ -1,0 +1,297 @@
+include ../icon/icon
+include ../pagination/pagination
+
+
+mixin results()
+	.results&attributes(attributes)
+		table.results__table
+			tr.results__row.results__row_caption
+				td(colspan='2')
+					.results__caption
+				td.results__caption(colspan='6')
+					.results__caption-w Noise Level, dB
+
+			tr.results__row.results__row_header
+				th.results__fav &nbsp;
+
+				th.results__details
+					.results__details-w Details
+
+				th.results__speed.results__speed_idle
+					.results__speed-w Idle
+				th.results__speed.results__speed_first
+					.results__speed-w 60 km/h
+				th.results__speed.results__speed_second(data-noise-title='Noise Level, dB')
+					.results__speed-w 80 km/h
+				th.results__speed.results__speed_third
+					.results__speed-w 100 km/h
+				th.results__speed.results__speed_fourth
+					.results__speed-w 120 km/h
+				th.results__speed.results__speed_fifth
+					.results__speed-w 140 km/h
+
+			tbody.results__table-body
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Honda Civic / 2018
+							.results__details-spec 500e
+
+					td.results__speed.results__speed_idle
+						.results__speed-w 54.5
+					td.results__speed.results__speed_first
+						.results__speed-w 50.7
+					td.results__speed.results__speed_second
+						.results__speed-w 56.0
+					td.results__speed.results__speed_third
+						.results__speed-w 61.1
+					td.results__speed.results__speed_fourth
+						.results__speed-w 61.0
+					td.results__speed.results__speed_fifth
+						.results__speed-w 66.5
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon.results__fav-icon_active
+					td.results__details
+						.results__details-w
+							.results__details-model Hyundai Genesis / 2008
+							.results__details-spec Diesel
+					td.results__speed.results__speed_idle
+						.results__speed-w 50.7
+					td.results__speed.results__speed_first
+						.results__speed-w 51.7
+					td.results__speed.results__speed_second
+						.results__speed-w 56.2
+					td.results__speed.results__speed_third
+						.results__speed-w 60.9
+					td.results__speed.results__speed_fourth
+						.results__speed-w 62.0
+					td.results__speed.results__speed_fifth
+						.results__speed-w 64.1
+
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon.results__fav-icon_active
+					td.results__details
+						.results__details-w
+							.results__details-model Dacia Duster / 2013
+							.results__details-spec AMG Roadster
+					td.results__speed.results__speed_idle
+						.results__speed-w 50.7
+					td.results__speed.results__speed_first
+						.results__speed-w 50.7
+					td.results__speed.results__speed_second
+						.results__speed-w 57.3
+					td.results__speed.results__speed_third
+						.results__speed-w 57.3
+					td.results__speed.results__speed_fourth
+						.results__speed-w 63.1
+					td.results__speed.results__speed_fifth
+						.results__speed-w 66.0
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Dacia Sandero / 2014
+							.results__details-spec 1.2
+					td.results__speed.results__speed_idle
+						.results__speed-w 48.4
+					td.results__speed.results__speed_first
+						.results__speed-w 48.9
+					td.results__speed.results__speed_second
+						.results__speed-w 57.4
+					td.results__speed.results__speed_third
+						.results__speed-w 60.9
+					td.results__speed.results__speed_fourth
+						.results__speed-w 63.6
+					td.results__speed.results__speed_fifth
+						.results__speed-w 66.0
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model BMW X5 / 2009
+							.results__details-spec 2.0 TDI Stationcar
+					td.results__speed.results__speed_idle
+						.results__speed-w 48.0
+					td.results__speed.results__speed_first
+						.results__speed-w 50.7
+					td.results__speed.results__speed_second
+						.results__speed-w 53.8
+					td.results__speed.results__speed_third
+						.results__speed-w 59.9
+					td.results__speed.results__speed_fourth
+						.results__speed-w 60.4
+					td.results__speed.results__speed_fifth
+						.results__speed-w 66.0
+
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Ford Fiesta / 2016
+							.results__details-spec 2.0 TFSI
+					td.results__speed.results__speed_idle
+						.results__speed-w 51.0
+					td.results__speed.results__speed_first
+						.results__speed-w 50.3
+					td.results__speed.results__speed_second
+						.results__speed-w 53.8
+					td.results__speed.results__speed_third
+						.results__speed-w 59.9
+					td.results__speed.results__speed_fourth
+						.results__speed-w 63.6
+					td.results__speed.results__speed_fifth
+						.results__speed-w 66.5
+
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Hyundai Kona / 2018
+							.results__details-spec 1.2 Coupe
+					td.results__speed.results__speed_idle
+						.results__speed-w 54.5
+					td.results__speed.results__speed_first
+						.results__speed-w 54.1
+					td.results__speed.results__speed_second
+						.results__speed-w 60.2
+					td.results__speed.results__speed_third
+						.results__speed-w 60.7
+					td.results__speed.results__speed_fourth
+						.results__speed-w 62.8
+					td.results__speed.results__speed_fifth
+						.results__speed-w 63.8
+
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Opel Astra / 2018
+							.results__details-spec 2.8 CRD
+					td.results__speed.results__speed_idle
+						.results__speed-w 51.3
+					td.results__speed.results__speed_first
+						.results__speed-w 51.1
+					td.results__speed.results__speed_second
+						.results__speed-w 53.4
+					td.results__speed.results__speed_third
+						.results__speed-w 59.4
+					td.results__speed.results__speed_fourth
+						.results__speed-w 63.6
+					td.results__speed.results__speed_fifth
+						.results__speed-w 67.0
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Hyundai Tucson / 2010
+							.results__details-spec 1.0
+					td.results__speed.results__speed_idle
+						.results__speed-w 48.0
+					td.results__speed.results__speed_first
+						.results__speed-w 48.9
+					td.results__speed.results__speed_second
+						.results__speed-w 54.9
+					td.results__speed.results__speed_third
+						.results__speed-w 61.4
+					td.results__speed.results__speed_fourth
+						.results__speed-w 63.1
+					td.results__speed.results__speed_fifth
+						.results__speed-w 65.2
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Volvo V50 / 2017
+							.results__details-spec 2.0d
+					td.results__speed.results__speed_idle
+						.results__speed-w 48.0
+					td.results__speed.results__speed_first
+						.results__speed-w 54.6
+					td.results__speed.results__speed_second
+						.results__speed-w 56.2
+					td.results__speed.results__speed_third
+						.results__speed-w 61.2
+					td.results__speed.results__speed_fourth
+						.results__speed-w 62.8
+					td.results__speed.results__speed_fifth
+						.results__speed-w 66.0
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model BMW M2 / 2014
+							.results__details-spec 2.0 TDI Stationcar
+					td.results__speed.results__speed_idle
+						.results__speed-w 48.6
+					td.results__speed.results__speed_first
+						.results__speed-w 51.7
+					td.results__speed.results__speed_second
+						.results__speed-w 56.2
+					td.results__speed.results__speed_third
+						.results__speed-w 59.6
+					td.results__speed.results__speed_fourth
+						.results__speed-w 62.7
+					td.results__speed.results__speed_fifth
+						.results__speed-w 65.3
+
+				tr.results__row
+					td.results__fav
+						+icon('fav-icon', true).results__fav-icon
+					td.results__details
+						.results__details-w
+							.results__details-model Jeep Renegade / 2008
+							.results__details-spec GTI
+					td.results__speed.results__speed_idle
+						.results__speed-w 50.0
+					td.results__speed.results__speed_first
+						.results__speed-w 51.0
+					td.results__speed.results__speed_second
+						.results__speed-w 56.7
+					td.results__speed.results__speed_third
+						.results__speed-w 59.6
+					td.results__speed.results__speed_fourth
+						.results__speed-w 62.0
+					td.results__speed.results__speed_fifth
+						.results__speed-w 65.5
+
+
+		+pagination().results__pagination
+
+
+
+
+mixin results-no-results()
+	.results&attributes(attributes)
+		.results__notfound
+			svg.results__notfound-icon(width='186', height='186', viewbox='0 0 186 186', fill='none', xmlns='http://www.w3.org/2000/svg')
+				path(d='M177.268 177.265C176.539 177.994 175.674 178.572 174.722 178.967C173.769 179.361 172.749 179.564 171.718 179.563C170.687 179.566 169.667 179.365 168.714 178.971C167.762 178.577 166.898 177.998 166.171 177.268L118.973 130.066L130.066 118.972L177.264 166.174C178.735 167.644 179.562 169.638 179.563 171.718C179.563 173.798 178.738 175.793 177.268 177.264V177.265ZM72.8398 139.357C36.1208 139.316 6.36484 109.559 6.32384 72.84C6.32384 36.104 36.1038 6.32404 72.8398 6.32404C109.576 6.32404 139.357 36.104 139.357 72.84C139.357 109.576 109.577 139.357 72.8398 139.357ZM181.64 161.8L133.18 113.336C155.583 79.974 146.7 34.767 113.337 12.364C79.9738 -10.04 34.7678 -1.15596 12.3638 32.206C-10.0392 65.568 -1.15616 110.775 32.2058 133.178C56.7398 149.654 88.8018 149.654 113.336 133.178L161.796 181.642C167.276 187.122 176.16 187.122 181.639 181.642C187.118 176.163 187.119 167.279 181.639 161.8H181.64Z', fill='#EDEDED')
+				path(d='M74.4638 12.53L74.2998 18.717C82.2081 18.9217 89.9749 20.8613 97.051 24.3985C104.127 27.9357 110.34 32.9842 115.25 39.187L120.094 35.339C114.622 28.4284 107.699 22.8037 99.8142 18.8624C91.9296 14.9211 83.2756 12.7594 74.4638 12.53V12.53Z', fill='#EDEDED')
+				path(d='M124.605 41.8501L119.3 45.0331C120.453 46.9484 121.486 48.9332 122.394 50.9761L128.036 48.4761C127.029 46.1993 125.884 43.9864 124.606 41.8501H124.605Z', fill='#EDEDED')
+
+			h1.results__notfound-title We Didn’t Find Anything
+			.results__notfound-text
+				p Try removing a filter or changing your options to find your perfect car.
+			a.results__notfound-link(href="#") Request Other Models
+

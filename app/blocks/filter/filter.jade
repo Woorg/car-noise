@@ -1,3 +1,185 @@
+include ../form/form
+include ../icon/icon
+
+
 mixin filter()
-	+b.filter&attributes(attributes)
-		block
+	.filter&attributes(attributes)
+		.filter__top
+			h2.filter__title Filter By
+			button.filter__reset Reset All
+
+		.filter__block.filter__block_years
+			.filter__block-top
+				.filter__block-title YEARS
+				button.filter__close
+					.filter__close-text Close
+					+icon('close-icon', true).filter__close-icon
+
+
+					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M1.41016 1L11.4102 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+						path(d='M11.4102 1L1.41016 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+
+
+			.filter__check-w
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text 2019
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text 2018
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text 2017
+
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year" checkbox)
+							span.filter__check-text 2016
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year" checkbox)
+							span.filter__check-text 2015
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text 2014
+
+			button.filter__less Less
+
+
+		.filter__block.filter__block_make
+			.filter__block-top
+				.filter__block-title Make
+				button.filter__close
+					.filter__close-text Close
+					+icon('close-icon', true).filter__close-icon
+
+					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M1.41016 1L11.4102 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+						path(d='M11.4102 1L1.41016 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+
+
+			.filter__check-w
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text Toyota
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year" checked)
+							span.filter__check-text Mazda
+
+			//- .filter__field-select_active
+			.filter__select-w
+
+				.filter__field-select
+					select.filter__select(name="")
+						option(value="select-0") New data request
+						option(value="select-1") List Option 1
+						option(value="select-2") List Option 2
+						option(value="select-3") List Option 3
+						option(value="select-4") List Option 4
+
+					.filter__select Select Make
+
+					.filter__select-list
+						.filter__select-item.filter__select-item_active Select Make
+						.filter__select-item List Option 1
+						.filter__select-item List Option 2
+						.filter__select-item List Option 3
+						.filter__select-item List Option 4
+
+				button.filter__add add
+
+
+		.filter__block.filter__block_class
+			.filter__block-top
+				.filter__block-title Class
+				button.filter__close
+					.filter__close-text Close
+
+					+icon('close-icon', true).filter__close-icon
+					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M1.41016 1L11.4102 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+						path(d='M11.4102 1L1.41016 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+
+
+			.filter__check-w
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text Economy
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year" checked)
+							span.filter__check-text Mid-Size
+
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text Compact
+
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year" checked)
+							span.filter__check-text SUV
+
+			button.filter__more More
+
+
+
+		.filter__block.filter__block_engine
+			.filter__block-top
+				.filter__block-title Engine
+				button.filter__close
+					.filter__close-text Close
+
+					+icon('close-icon', true).filter__close-icon
+					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M1.41016 1L11.4102 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+						path(d='M11.4102 1L1.41016 11', stroke='#979797', stroke-width='1.08', stroke-miterlimit='50', stroke-linecap='round', stroke-linejoin='round')
+
+
+			.filter__check-w
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text Petrol
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year" checked)
+							span.filter__check-text Hybrid
+
+				.filter__check-col
+					.filter__check
+						label.filter__check-label
+							input.filter__check-input(type="checkbox" value="" name="year")
+							span.filter__check-text Diesel
+
+
+			button.filter__more More
+
+
+
+		.filter__block.filter__block_cars
+			.filter__block-top
+				.filter__block-title Cars
+
+
+			.filter__block-graph
+				img(src='assets/images/content/cars-graph.png', srcset='assets/images/content/cars-graph@2x.png 2x, assets/images/content/cars-graph@3x.png 3x')
+
+
+
+
+

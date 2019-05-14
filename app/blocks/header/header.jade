@@ -47,3 +47,110 @@ mixin header-filter-login()
 				.h-user__email vanone@gmail.com
 				.h-user__user-pic
 					img(src="assets/images/content/user.jpg", alt="")
+
+
+mixin header-dropdown-active()
+	header.header&attributes(attributes)
+		.header__in.container
+			a.header__logo.logo(href="#")
+				.logo__text myquietnewcar
+				img.logo__image(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x')
+
+			nav.header__nav.nav
+				ul.nav__list
+					li.nav__item.nav__item_active
+						a.nav__link(href="#") my search
+					li.nav__item
+						a.nav__link(href="#") my options (3)
+
+			.header__h-user.h-user.h-user_active
+				a.h-user__link(href="#")
+				.h-user__email
+					span.h-user__email-val vanone@gmail.com
+
+				.h-user__user-pic
+					img(src="assets/images/content/user.jpg", alt="")
+
+				ul.h-user__dropdown
+					li.h-user__dropdown-item.h-user__dropdown-item_active
+						a.h-user__dropdown-link(href="#") Settings
+					li.h-user__dropdown-item
+						a.h-user__dropdown-link(href="#") Archived
+					li.h-user__dropdown-item
+						a.h-user__dropdown-link(href="#") Donate
+					li.h-user__dropdown-item
+						a.h-user__dropdown-link(href="#") Log out
+
+
+mixin header-dropdown()
+	header.header&attributes(attributes)
+		.header__in.container
+			a.header__logo.logo(href="#")
+				.logo__text myquietnewcar
+				img.logo__image(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x')
+
+			nav.header__nav.nav
+				ul.nav__list
+					li.nav__item.nav__item_active
+						a.nav__link(href="#") my search
+					li.nav__item
+						a.nav__link(href="#") my options (3)
+
+			.header__h-user.h-user
+				a.h-user__link(href="#")
+				.h-user__email
+					span.h-user__email-val vanone@gmail.com
+
+				.h-user__user-pic
+					img(src="assets/images/content/user.jpg", alt="")
+
+				ul.h-user__dropdown
+					li.h-user__dropdown-item.h-user__dropdown-item_active
+						a.h-user__dropdown-link(href="#") Settings
+					li.h-user__dropdown-item
+						a.h-user__dropdown-link(href="#") Archived
+					li.h-user__dropdown-item
+						a.h-user__dropdown-link(href="#") Donate
+					li.h-user__dropdown-item
+						a.h-user__dropdown-link(href="#") Log out
+
+
+
+mixin header-logout()
+	header.header&attributes(attributes)
+		.header__in.container
+			a.header__logo.logo(href="#")
+				.logo__text myquietnewcar
+				img.logo__image(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x')
+
+			nav.header__nav.nav
+				ul.nav__list
+					li.nav__item.nav__item_active
+						a.nav__link(href="#") my search
+					li.nav__item
+						a.nav__link(href="#") my options (3)
+
+			.header__h-user.h-user
+				a.h-user__auth(href="#") Sign up
+				a.h-user__auth.h-user__auth_active(href="#") Sign in
+
+
+
+
+
+				//- a.h-user__link(href="#")
+				//- .h-user__email
+				//- 	span.h-user__email-val vanone@gmail.com
+
+				//- .h-user__user-pic
+				//- 	img(src="assets/images/content/user.jpg", alt="")
+
+				//- ul.h-user__dropdown
+				//- 	li.h-user__dropdown-item.h-user__dropdown-item_active
+				//- 		a.h-user__dropdown-link(href="#") Settings
+				//- 	li.h-user__dropdown-item
+				//- 		a.h-user__dropdown-link(href="#") Archived
+				//- 	li.h-user__dropdown-item
+				//- 		a.h-user__dropdown-link(href="#") Donate
+				//- 	li.h-user__dropdown-item
+				//- 		a.h-user__dropdown-link(href="#") Log out

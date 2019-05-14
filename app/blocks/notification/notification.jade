@@ -1,0 +1,27 @@
+include ../icon/icon
+
+mixin notification-red()
+	.notification.notification_red&attributes(attributes)
+		.notification__text A car was added to your shortlist. Log in/create account to save actions.
+		button.notification__close
+			+icon('close-icon', true).notification__icon
+
+
+mixin notification-yellow()
+	.notification.notification_yellow&attributes(attributes)
+		.notification__text A car was added to your shortlist. Log in/create account to save actions.
+		button.notification__close
+			+icon('close-icon', true).notification__icon
+
+mixin notification-green()
+	.notification.notification_green&attributes(attributes)
+		.notification__text A car was added to your shortlist. Log in/create account to save actions.
+		button.notification__close
+			+icon('close-icon', true).notification__icon
+
+
+mixin notification-cookie()
+	.notification.notification_cookie&attributes(attributes)
+		.notification__text By using this site you agree to our use of cookies.
+		button.notification__close
+			+icon('close-icon', true).notification__icon

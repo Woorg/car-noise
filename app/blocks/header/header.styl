@@ -44,10 +44,28 @@
 
 
 .h-user
+	position relative
+	z-index 1
 	display flex
 	align-items center
 	text-decoration none
 	cursor pointer
+	&:hover .h-user__dropdown,
+	&:focus .h-user__dropdown
+		visibility visible
+		opacity 1
+		tr(opacity .3s ease)
+	&__link
+		position absolute
+		z-index 1
+		top 0
+		right 0
+		bottom 0
+		left 0
+		width 100%
+		height 100%
+		color #6e7274
+		text-decoration none
 	&__email
 		position relative
 		margin-right 20px
@@ -60,6 +78,7 @@
 		&:after
 			position absolute
 			top calc(50% + 1px)
+			right 0
 			width 0
 			height 0
 			content ''
@@ -72,3 +91,93 @@
 		width 40px
 		height 40px
 		border-radius 50%
+
+	&__dropdown
+		position absolute
+		top 100%
+		left -92px
+		width 256px
+
+		visibility hidden
+		opacity 0
+		background #FFF
+		box-shadow 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08)
+		background-color #ffffff
+		tr(opacity .3s ease)
+
+	&__dropdown-item
+		&:hover
+			.h-user__dropdown-link
+				border 1px solid #0db6ff
+				// margin-left -1px
+				// margin-right -1px
+				padding-left 14px
+				padding-right 14px
+				color #0e0e0e
+				tr(padding-left .3s ease)
+		&:last-child
+			.h-user__dropdown-link
+				position relative
+				&:after
+					position absolute
+					top 0
+					left 6px
+					right 6px
+					content ''
+					height 1px
+					background-color rgba(0, 0, 0, 0.06)
+
+	&__dropdown-item_active
+		.h-user__dropdown-link
+			border 1px solid #0db6ff
+			// margin-left -1px
+			// margin-right -1px
+			padding-left 14px
+			padding-right 14px
+			color #0e0e0e
+			tr(padding-left .3s ease)
+
+	&__dropdown-link
+		border 1px solid transparent
+		padding-top 14px
+		padding-bottom 14px
+		padding-left 22px
+		padding-right 22px
+		display block
+		color #777777
+		font-size 14px
+		font-weight 500
+		line-height 20px
+		text-decoration none
+		tr(padding-left .3s ease)
+
+
+	&__auth
+		border 2px solid transparent
+		margin-right 5px
+		padding-top 8px
+		padding-right 27px
+		padding-bottom 7px
+		padding-left 27px
+		height 34px
+		color #0db6ff
+		font-size 14px
+		font-weight 500
+		letter-spacing 0.82px
+		text-transform uppercase
+		text-decoration none
+		border-radius 42px
+		tr(border .3s ease)
+		&:last-child
+			margin-right 0
+		&:hover
+			border 2px solid #0db6ff
+			tr(border .3s ease)
+	&__auth_active
+		border 2px solid #0db6ff
+
+.h-user_active
+	.h-user__dropdown
+		visibility visible
+		opacity 1
+		tr(opacity .3s ease)

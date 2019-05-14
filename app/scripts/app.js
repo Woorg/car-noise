@@ -64,9 +64,17 @@ import slick from 'slick-carousel';
 			'forgot',
 			'login',
 			'auth-error',
-			'filter-login'
-		]);
+			'filter-login',
+			'filter-dropdown',
+			'filter-alert-red',
+			'filter-alert-yellow',
+			'filter-alert-green',
+			'filter-cookie',
+			'filter-logout',
+			'filter-no-results',
 
+
+		]);
 
 
 

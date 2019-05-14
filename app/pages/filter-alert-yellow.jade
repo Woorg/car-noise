@@ -8,6 +8,8 @@ include /blocks/text/text
 
 include /blocks/filter-page/filter-page
 
+include /blocks/notification/notification
+
 
 include /blocks/filter/filter
 
@@ -25,11 +27,12 @@ include /blocks/footer/footer
 
 
 block head
-	- var pageTitle = 'Filter page login';
+	- var pageTitle = 'Filter page dropdown';
 
 block content
-	+header-filter-login()
+	+header-dropdown()
 	+main().container.page__inner
+		+notification-yellow()
 		+filter-page()
 			+content()
 				+results()
