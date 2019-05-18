@@ -1,4 +1,5 @@
-.results
+.results,
+.shortlist
 	padding-top 42px
 	&__table
 		border-collapse collapse
@@ -46,7 +47,18 @@
 		margin-bottom -20px
 
 
-	&__fav
+	&__handle
+		position relative
+		width 2%
+	&__handle-icon
+		position absolute
+		top 50%
+		left 50%
+		retinaSprite($handle_icon_group)
+		transform translate(-50%, -50%)
+
+	&__fav,
+	&__num
 		// display table-cell
 		padding-left 5px
 		padding-right 5px
@@ -198,19 +210,7 @@
 			color darken(#0db6ff, 10)
 			tr(color .3s ease)
 
-	// &__row
-	// 	td
-	// 		&:hover,
-	// 		&:focus
-	// 			&:after
-	// 				position absolute
-	// 				z-index -1
-	// 				top -5000px
-	// 				left 0
-	// 				width 100%
-	// 				content ''
-	// 				height 10000px
-	// 				background-color #f3fbff
+
 
 
 

@@ -1,0 +1,96 @@
+.share
+	position absolute
+	padding-top 24px
+	padding-right 30px
+	padding-bottom 24px
+	padding-left 30px
+	max-width 890px
+	width 100%
+	height 128px
+	box-shadow 0 3px 12px rgba(128, 128, 128, 0.15)
+	background-color #ffffff
+	&__title
+		margin-bottom 13px
+		color #817f7f
+		font-size 16px
+		font-weight 400
+		line-height 1.25
+	&__form
+		form
+			display flex
+
+	&__label,
+	&__input
+		height 48px
+		font-size 14px
+		font-weight 400
+		line-height 1
+	&__label
+		padding-top 17px
+		padding-bottom 11px
+		width 112px
+		background-color #0db6ff
+		color #FFF
+		text-align center
+		cursor pointer
+		border-radius 4px 0 0 4px
+	&__input-w
+		position relative
+		flex 0 1 464px
+
+	&__input
+		border 1px solid #e1e4e8
+		border-width 1px 1px 1px 0
+		padding-top 12px
+		padding-right 60px
+		padding-bottom 14px
+		padding-left 16px
+		width 100%
+		background #FFF
+
+		color #777777
+		border-radius 0 4px 4px 0
+		+placeholder()
+			color #777777
+
+
+	&__icon
+		position absolute
+		top 50%
+		right 24px
+		width 20px
+		height 20px
+		fill #182c4f
+		opacity 0.5
+		transform translateY(-50%)
+
+	&__close,
+	&__close-icon
+		width 16px
+		height 15px
+
+	&__close
+		resetbutton()
+		position absolute
+		top 25px
+		right 15px
+
+
+.share_email
+	.share__input
+		margin-right 15px
+		border-width 1px
+		flex 0 1 292px
+		border-radius 4px
+	.share__submit
+		max-width 94px
+		width 10%
+		height 48px
+
+		font-size 14px
+		font-weight 500
+		line-height 1
+		text-transform uppercase
+
+		box-shadow none
+		border-radius 4px

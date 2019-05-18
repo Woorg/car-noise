@@ -1,0 +1,1040 @@
+include ../icon/icon
+include ../share/share
+
+
+mixin shortlist()
+	.shortlist&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title My shortlist
+			.shortlist__buttons
+				button.shortlist__button.shortlist__button_share.button-icon
+					+icon('share-icon', true).button-icon__icon
+					span.button-icon__text Share
+				button.shortlist__button.shortlist__button_email.button-icon
+					+icon('email-icon', true).button-icon__icon
+					span.button-icon__text Mail
+				button.shortlist__button.shortlist__button_basket.button-icon
+					+icon('basket-icon', true).button-icon__icon
+					span.button-icon__text Clear
+				button.shortlist__button.shortlist__button_print.button-icon
+					+icon('print-icon', true).button-icon__icon
+					span.button-icon__text Print
+				button.shortlist__button.shortlist__button_archive.button-icon
+					+icon('archive-icon', true).button-icon__icon
+					span.button-icon__text Archive
+
+
+		table.shortlist__table
+			tr.shortlist__row.shortlist__row_caption
+				th.shortlist__handle(rowspan='2')
+				th.shortlist__num(rowspan='2') #
+
+				th.shortlist__details(rowspan='2')
+					.shortlist__details-w Details
+				td.shortlist__caption.shortlist__caption_noise(colspan='6')
+					.shortlist__caption-w Noise Level, dB
+
+			tr.shortlist__row.shortlist__row_header
+				//- th.shortlist__handle
+				//- 	.shortlist__handle-icon
+				//- th.shortlist__num #
+
+				//- th.shortlist__details
+				//- 	.shortlist__details-w Details
+
+				th.shortlist__speed.shortlist__speed_idle
+					.shortlist__speed-w Idle
+				th.shortlist__speed.shortlist__speed_first
+					.shortlist__speed-w 60 km/h
+				th.shortlist__speed.shortlist__speed_second(data-noise-title='Noise Level, dB')
+					.shortlist__speed-w 80 km/h
+				th.shortlist__speed.shortlist__speed_third
+					.shortlist__speed-w 100 km/h
+				th.shortlist__speed.shortlist__speed_fourth
+					.shortlist__speed-w 120 km/h
+				th.shortlist__speed.shortlist__speed_fifth
+					.shortlist__speed-w 140 km/h
+
+			tbody.shortlist__table-body
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 1
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Audi Q5 / 2017
+								.shortlist__details-spec 1.7 CDTI
+							button.shortlist__details-button.button-details Remove
+
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.9
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.9
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.8
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 65.0
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 2
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Ford Fusion / 2018
+								.shortlist__details-spec 3.6 V6
+							button.shortlist__details-button.button-details Remove
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 3
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Volkswagen Polo / 2017
+								.shortlist__details-spec Stationcar
+							button.shortlist__details-button.button-details Remove
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 54.6
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 67.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 4
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Mitsubishi ASX / 2012
+								.shortlist__details-spec 2.0D
+							button.shortlist__details-button.button-details Remove
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.5
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 5
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Opel Corsa / 2011
+							button.shortlist__details-button.button-details Remove
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 47.5
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.3
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.6
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 64.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 6
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model BMW 3 / 2009
+								.shortlist__details-spec 1.6 VTI
+							button.shortlist__details-button.button-details Remove
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.0
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.5
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.2
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.6
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 7
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Seat Altea / 2018
+								.shortlist__details-spec 1.6
+							button.shortlist__details-button.button-details Remove
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.4
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 48.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.4
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 62.3
+
+
+
+
+
+mixin shortlist-import()
+	.shortlist&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title shortlist YBN STUD shortlist YBN STUD shortlist YBN STUD
+			.shortlist__buttons
+				button.shortlist__button.shortlist__button_share.button-icon
+					+icon('share-icon', true).button-icon__icon
+					span.button-icon__text Share
+				button.shortlist__button.shortlist__button_email.button-icon
+					+icon('email-icon', true).button-icon__icon
+					span.button-icon__text Mail
+				button.shortlist__button.shortlist__button_basket.button-icon
+					+icon('basket-icon', true).button-icon__icon
+					span.button-icon__text Clear
+				button.shortlist__button.shortlist__button_print.button-icon
+					+icon('print-icon', true).button-icon__icon
+					span.button-icon__text Print
+				button.shortlist__button.shortlist__button_archive.button-icon
+					+icon('archive-icon', true).button-icon__icon
+					span.button-icon__text Archive
+
+		table.shortlist__table
+			tr.shortlist__row.shortlist__row_caption
+				th.shortlist__handle(rowspan='2')
+				th.shortlist__num(rowspan='2') #
+
+				th.shortlist__details(rowspan='2')
+					.shortlist__details-w Details
+				td.shortlist__caption.shortlist__caption_noise(colspan='6')
+					.shortlist__caption-w Noise Level, dB
+
+			tr.shortlist__row.shortlist__row_header
+				//- th.shortlist__handle
+				//- 	.shortlist__handle-icon
+				//- th.shortlist__num #
+
+				//- th.shortlist__details
+				//- 	.shortlist__details-w Details
+
+				th.shortlist__speed.shortlist__speed_idle
+					.shortlist__speed-w Idle
+				th.shortlist__speed.shortlist__speed_first
+					.shortlist__speed-w 60 km/h
+				th.shortlist__speed.shortlist__speed_second(data-noise-title='Noise Level, dB')
+					.shortlist__speed-w 80 km/h
+				th.shortlist__speed.shortlist__speed_third
+					.shortlist__speed-w 100 km/h
+				th.shortlist__speed.shortlist__speed_fourth
+					.shortlist__speed-w 120 km/h
+				th.shortlist__speed.shortlist__speed_fifth
+					.shortlist__speed-w 140 km/h
+
+			tbody.shortlist__table-body
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 1
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Audi Q5 / 2017
+								.shortlist__details-spec 1.7 CDTI
+							button.shortlist__details-button.button-details Import
+
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.9
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.9
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.8
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 65.0
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 2
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Ford Fusion / 2018
+								.shortlist__details-spec 3.6 V6
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 3
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Volkswagen Polo / 2017
+								.shortlist__details-spec Stationcar
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 54.6
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 67.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 4
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Mitsubishi ASX / 2012
+								.shortlist__details-spec 2.0D
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.5
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 5
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Opel Corsa / 2011
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 47.5
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.3
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.6
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 64.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 6
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model BMW 3 / 2009
+								.shortlist__details-spec 1.6 VTI
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.0
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.5
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.2
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.6
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 7
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Seat Altea / 2018
+								.shortlist__details-spec 1.6
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.4
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 48.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.4
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 62.3
+
+
+
+mixin shortlist-share()
+	.shortlist&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title MY shortlist
+			.shortlist__buttons
+				button.shortlist__button.shortlist__button_share.shortlist__button_active.button-icon
+					+icon('share-icon', true).button-icon__icon
+					span.button-icon__text Share
+				button.shortlist__button.shortlist__button_email.button-icon
+					+icon('email-icon', true).button-icon__icon
+					span.button-icon__text Mail
+				button.shortlist__button.shortlist__button_basket.button-icon
+					+icon('basket-icon', true).button-icon__icon
+					span.button-icon__text Clear
+				button.shortlist__button.shortlist__button_print.button-icon
+					+icon('print-icon', true).button-icon__icon
+					span.button-icon__text Print
+				button.shortlist__button.shortlist__button_archive.button-icon
+					+icon('archive-icon', true).button-icon__icon
+					span.button-icon__text Archive
+
+			+share().shortlist__share
+
+		table.shortlist__table
+			tr.shortlist__row.shortlist__row_caption
+				th.shortlist__handle(rowspan='2')
+				th.shortlist__num(rowspan='2') #
+
+				th.shortlist__details(rowspan='2')
+					.shortlist__details-w Details
+				td.shortlist__caption.shortlist__caption_noise(colspan='6')
+					.shortlist__caption-w Noise Level, dB
+
+			tr.shortlist__row.shortlist__row_header
+				//- th.shortlist__handle
+				//- 	.shortlist__handle-icon
+				//- th.shortlist__num #
+
+				//- th.shortlist__details
+				//- 	.shortlist__details-w Details
+
+				th.shortlist__speed.shortlist__speed_idle
+					.shortlist__speed-w Idle
+				th.shortlist__speed.shortlist__speed_first
+					.shortlist__speed-w 60 km/h
+				th.shortlist__speed.shortlist__speed_second(data-noise-title='Noise Level, dB')
+					.shortlist__speed-w 80 km/h
+				th.shortlist__speed.shortlist__speed_third
+					.shortlist__speed-w 100 km/h
+				th.shortlist__speed.shortlist__speed_fourth
+					.shortlist__speed-w 120 km/h
+				th.shortlist__speed.shortlist__speed_fifth
+					.shortlist__speed-w 140 km/h
+
+			tbody.shortlist__table-body
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 1
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Audi Q5 / 2017
+								.shortlist__details-spec 1.7 CDTI
+							button.shortlist__details-button.button-details Import
+
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.9
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.9
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.8
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 65.0
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 2
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Ford Fusion / 2018
+								.shortlist__details-spec 3.6 V6
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 3
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Volkswagen Polo / 2017
+								.shortlist__details-spec Stationcar
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 54.6
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 67.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 4
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Mitsubishi ASX / 2012
+								.shortlist__details-spec 2.0D
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.5
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 5
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Opel Corsa / 2011
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 47.5
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.3
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.6
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 64.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 6
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model BMW 3 / 2009
+								.shortlist__details-spec 1.6 VTI
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.0
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.5
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.2
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.6
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 7
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Seat Altea / 2018
+								.shortlist__details-spec 1.6
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.4
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 48.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.4
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 62.3
+
+
+
+mixin shortlist-email()
+	.shortlist&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title MY shortlist
+			.shortlist__buttons
+				button.shortlist__button.shortlist__button_share.button-icon
+					+icon('share-icon', true).button-icon__icon
+					span.button-icon__text Share
+				button.shortlist__button.shortlist__button_email.shortlist__button_active.button-icon
+					+icon('email-icon', true).button-icon__icon
+					span.button-icon__text Mail
+				button.shortlist__button.shortlist__button_basket.button-icon
+					+icon('basket-icon', true).button-icon__icon
+					span.button-icon__text Clear
+				button.shortlist__button.shortlist__button_print.button-icon
+					+icon('print-icon', true).button-icon__icon
+					span.button-icon__text Print
+				button.shortlist__button.shortlist__button_archive.button-icon
+					+icon('archive-icon', true).button-icon__icon
+					span.button-icon__text Archive
+
+			+share-email().shortlist__share
+
+		table.shortlist__table
+			tr.shortlist__row.shortlist__row_caption
+				th.shortlist__handle(rowspan='2')
+				th.shortlist__num(rowspan='2') #
+
+				th.shortlist__details(rowspan='2')
+					.shortlist__details-w Details
+				td.shortlist__caption.shortlist__caption_noise(colspan='6')
+					.shortlist__caption-w Noise Level, dB
+
+			tr.shortlist__row.shortlist__row_header
+				//- th.shortlist__handle
+				//- 	.shortlist__handle-icon
+				//- th.shortlist__num #
+
+				//- th.shortlist__details
+				//- 	.shortlist__details-w Details
+
+				th.shortlist__speed.shortlist__speed_idle
+					.shortlist__speed-w Idle
+				th.shortlist__speed.shortlist__speed_first
+					.shortlist__speed-w 60 km/h
+				th.shortlist__speed.shortlist__speed_second(data-noise-title='Noise Level, dB')
+					.shortlist__speed-w 80 km/h
+				th.shortlist__speed.shortlist__speed_third
+					.shortlist__speed-w 100 km/h
+				th.shortlist__speed.shortlist__speed_fourth
+					.shortlist__speed-w 120 km/h
+				th.shortlist__speed.shortlist__speed_fifth
+					.shortlist__speed-w 140 km/h
+
+			tbody.shortlist__table-body
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 1
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Audi Q5 / 2017
+								.shortlist__details-spec 1.7 CDTI
+							button.shortlist__details-button.button-details Import
+
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.9
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.9
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.8
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 65.0
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 2
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Ford Fusion / 2018
+								.shortlist__details-spec 3.6 V6
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 62.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 3
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Volkswagen Polo / 2017
+								.shortlist__details-spec Stationcar
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 54.6
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 61.0
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 67.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 4
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Mitsubishi ASX / 2012
+								.shortlist__details-spec 2.0D
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 53.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.7
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.5
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 5
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Opel Corsa / 2011
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 47.5
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.7
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.3
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.6
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 64.0
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 6
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model BMW 3 / 2009
+								.shortlist__details-spec 1.6 VTI
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 51.1
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 50.0
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 57.5
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 59.2
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 63.6
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 66.1
+
+
+				tr.shortlist__row
+					td.shortlist__handle
+						.shortlist__handle-icon
+					td.shortlist__num 7
+
+					td.shortlist__details
+						.shortlist__details-w
+							.shortlist__details-car
+								.shortlist__details-model Seat Altea / 2018
+								.shortlist__details-spec 1.6
+							button.shortlist__details-button.button-details Import
+
+					td.shortlist__speed.shortlist__speed_idle
+						.shortlist__speed-w 48.4
+					td.shortlist__speed.shortlist__speed_first
+						.shortlist__speed-w 48.3
+					td.shortlist__speed.shortlist__speed_second
+						.shortlist__speed-w 55.4
+					td.shortlist__speed.shortlist__speed_third
+						.shortlist__speed-w 60.4
+					td.shortlist__speed.shortlist__speed_fourth
+						.shortlist__speed-w 60.2
+					td.shortlist__speed.shortlist__speed_fifth
+						.shortlist__speed-w 62.3
+
+
+
+
+
+mixin shortlist-empty()
+	.shortlist.shortlist_empty&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title MY shortlist
+
+		.shortlist__w
+			.shortlist__image
+				img(src='assets/images/general/shortlist-empty.png', srcset='assets/images/general/shortlist-empty@2x.png 2x, assets/images/general/shortlist-empty@3x.png 3x' alt='')
+
+			h2.shortlist__sub-title Your Shortlist is Empty
+			.shortlist__text
+				p Use <a href="#">Helper Tool</a> to search for cars
+					span to add to your shortlist.
+					| See <a href="#">How it Works</a> page for more details.
+
+
+
+mixin archived-empty()
+	.shortlist.shortlist_empty&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title MY shortlist
+
+		.shortlist__w
+			.shortlist__image
+				img(src='assets/images/general/shortlist-empty.png', srcset='assets/images/general/shortlist-empty@2x.png 2x, assets/images/general/shortlist-empty@3x.png 3x' alt='')
+
+			h2.shortlist__sub-title You Have no Archived Shortlists Yet
+			.shortlist__text
+				p Click ‘Archive icon’
+					svg.shortlist__icon(viewbox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(opacity='0.75', d='M18.776 6.939C19.224 6.939 19.592 7.304 19.592 7.755V18.775C19.592 18.9915 19.5061 19.1992 19.3531 19.3524C19.2001 19.5055 18.9925 19.5917 18.776 19.592H0.816001C0.708805 19.5921 0.602636 19.5711 0.503575 19.5302C0.404514 19.4892 0.314507 19.4291 0.238708 19.3533C0.162909 19.2775 0.102808 19.1875 0.0618469 19.0884C0.0208856 18.9894 -0.000130995 18.8832 6.14307e-07 18.776V4.898C6.14307e-07 4.448 0.363001 4.082 0.816001 4.082H3.266V0.816C3.266 0.367 3.633 0 4.082 0H12.245C12.461 0 12.669 0.086 12.82 0.24L16.902 4.322C17.057 4.473 17.142 4.682 17.142 4.898V6.938L18.776 6.939ZM13.06 4.09H14.362L13.06 2.788V4.09ZM4.897 4.082H6.987C7.272 4.082 7.537 4.231 7.685 4.474L9.184 6.94H15.51V5.723H12.245C12.0288 5.72221 11.8217 5.63598 11.6689 5.48313C11.516 5.33027 11.4298 5.12317 11.429 4.907V1.633H4.898L4.897 4.082ZM17.958 8.574H8.722C8.58176 8.57365 8.44395 8.53734 8.32175 8.46853C8.19954 8.39973 8.09703 8.30073 8.024 8.181L6.531 5.714H1.633V17.97H17.959L17.958 8.574Z')
+
+					| to save shortlist.
+
+
+
+
+
+mixin archived-list()
+	.shortlist.shortlist_list&attributes(attributes)
+		.shortlist__top
+			h1.shortlist__title Archived lists
+
+
+		table.shortlist__table.shortlist__table_archived
+			tbody.shortlist__table-body
+				tr.shortlist__row
+					td.shortlist__table-title
+						.shortlist__table-model Ybnstud
+					td.shortlist__speed.shortlist__speed_all
+						.shortlist__speed-w 13 Cars
+					td.shortlist__speed.shortlist__speed_date
+						.shortlist__speed-w Archived on 27/04/2009
+
+				tr.shortlist__row
+					td.shortlist__table-title
+						.shortlist__table-model DUSTYBN
+					td.shortlist__speed.shortlist__speed_all
+						.shortlist__speed-w 8 Cars
+					td.shortlist__speed.shortlist__speed_date
+						.shortlist__speed-w Archived on 24/04/2015
+
+				tr.shortlist__row
+					td.shortlist__table-title
+						.shortlist__table-model GTMODERN TEST
+					td.shortlist__speed.shortlist__speed_all
+						.shortlist__speed-w 7 Cars
+					td.shortlist__speed.shortlist__speed_date
+						.shortlist__speed-w Archived on 12/06/2013
+
+				tr.shortlist__row
+					td.shortlist__table-title
+						.shortlist__table-model GMRTSR TEST 2
+					td.shortlist__speed.shortlist__speed_all
+						.shortlist__speed-w 17 Cars
+					td.shortlist__speed.shortlist__speed_date
+						.shortlist__speed-w Archived on 12/06/2013
+
+				tr.shortlist__row
+					td.shortlist__table-title
+						.shortlist__table-model AUTOCOLLECTION
+					td.shortlist__speed.shortlist__speed_all
+						.shortlist__speed-w 10 Cars
+					td.shortlist__speed.shortlist__speed_date
+						.shortlist__speed-w Archived on 12/06/2013
+
+

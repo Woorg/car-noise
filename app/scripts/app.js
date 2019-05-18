@@ -72,6 +72,15 @@ import slick from 'slick-carousel';
 			'filter-cookie',
 			'filter-logout',
 			'filter-no-results',
+			'shortlist',
+			'shortlist-import',
+			'shortlist-share',
+			'shortlist-email',
+			'shortlist-empty',
+			'archived-empty',
+			'archived',
+
+
 
 
 		]);

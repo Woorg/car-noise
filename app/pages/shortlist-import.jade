@@ -1,0 +1,42 @@
+extends /blocks/layout-default/layout-inner
+
+include /blocks/header/header
+
+include /blocks/main/main
+//- include /blocks/404/404
+include /blocks/text/text
+
+include /blocks/shortlist/shortlist
+
+
+//- include /blocks/filter-page/filter-page
+
+//- include /blocks/notification/notification
+
+
+//- include /blocks/filter/filter
+
+//- include /blocks/content/content
+//- include /blocks/sidebar/sidebar
+
+//- include /blocks/results/results
+
+//- include /blocks/cta/cta
+//- include /blocks/how/how
+//- include /blocks/facts/facts
+//- include /blocks/noise/noise
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'MY shortlist import';
+
+block content
+	+header-shortlist()
+	+main().container.page__inner
+		+shortlist-import()
+		//- +notification-cookie()
+
+
+	+footer()

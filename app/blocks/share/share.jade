@@ -1,0 +1,26 @@
+include ../icon/icon
+
+mixin share()
+	.share&attributes(attributes)
+		.share__title Share link to your shortlist
+		.share__form
+			form(action="" method='post')
+				label.share__label(for="link") http://
+				.share__input-w
+					input#link.share__input(type="text", value="", placeholder="johann_van.com")
+					+icon('url-icon', true).share__icon
+
+		button.share__close
+			+icon('close-icon', true).share__close-icon
+
+
+mixin share-email()
+	.share.share_email&attributes(attributes)
+		.share__title Enter email to send shortlist
+		.share__form
+			form(action="" method='post')
+				input#link.share__input(type="text", value="", placeholder="vanone92@gmail.com")
+				input.share__submit.button(type="submit", value="send")
+
+		button.share__close
+			+icon('close-icon', true).share__close-icon

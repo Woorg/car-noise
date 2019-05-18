@@ -39,11 +39,11 @@ mixin filter()
 				.filter__check-col
 					.filter__check
 						label.filter__check-label
-							input.filter__check-input(type="checkbox" value="" name="year" checkbox)
+							input.filter__check-input(type="checkbox" value="" name="year" checked)
 							span.filter__check-text 2016
 					.filter__check
 						label.filter__check-label
-							input.filter__check-input(type="checkbox" value="" name="year" checkbox)
+							input.filter__check-input(type="checkbox" value="" name="year" checked)
 							span.filter__check-text 2015
 					.filter__check
 						label.filter__check-label
@@ -57,7 +57,7 @@ mixin filter()
 			.filter__block-top
 				.filter__block-title Make
 				button.filter__close
-					.filter__close-text Close
+					span.filter__close-text Close
 					+icon('close-icon', true).filter__close-icon
 
 					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
@@ -103,7 +103,7 @@ mixin filter()
 			.filter__block-top
 				.filter__block-title Class
 				button.filter__close
-					.filter__close-text Close
+					span.filter__close-text Close
 
 					+icon('close-icon', true).filter__close-icon
 					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
@@ -141,7 +141,7 @@ mixin filter()
 			.filter__block-top
 				.filter__block-title Engine
 				button.filter__close
-					.filter__close-text Close
+					span.filter__close-text Close
 
 					+icon('close-icon', true).filter__close-icon
 					//- svg.filter__close-icon(width='12', height='12', viewbox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
@@ -177,7 +177,7 @@ mixin filter()
 
 
 			.filter__block-graph
-				img(src='assets/images/content/cars-graph.png', srcset='assets/images/content/cars-graph@2x.png 2x, assets/images/content/cars-graph@3x.png 3x')
+				img(src='assets/images/content/cars-graph.png', srcset='assets/images/content/cars-graph@2x.png 2x, assets/images/content/cars-graph@3x.png 3x' alt='')
 
 
 

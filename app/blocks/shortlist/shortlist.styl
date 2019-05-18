@@ -1,0 +1,213 @@
+.shortlist
+	padding-top 30px
+	padding-bottom 210px
+	&__top
+		position relative
+		margin-bottom 42px
+		display flex
+		align-items center
+	&__title
+		max-width 270px
+		width 100%
+		color #898ea2
+		font-size 20px
+		font-weight 600
+		letter-spacing 1.67px
+		line-height 16px
+		white-space nowrap
+		text-transform uppercase
+		text-overflow ellipsis
+		overflow hidden
+	&__buttons
+		margin-left 30px
+		display flex
+	&__button
+		margin-left 15px
+		&:first-child
+			margin-left 0
+
+	&__button_share
+		.button-icon__icon
+			width 20px
+			height 16px
+	&__button_email
+		.button-icon__icon
+			width 20px
+			height 13px
+	&__button_basket
+		.button-icon__icon
+			width 17px
+			height 19px
+	&__button_print
+		.button-icon__icon
+			width 20px
+			height 18px
+	&__button_archive
+		.button-icon__icon
+			width 20px
+			height 20px
+			// fill
+
+	&__button_active
+		position relative
+		&:after
+			position absolute
+			top calc(100% + 5px)
+			left 50%
+			content ''
+
+			width 0
+			height 0
+			border-style solid
+			border-width 0 15px 14px 15px
+			border-color transparent transparent #f3f0f0 transparent
+
+			transform translateX(-50%)
+
+
+	&__share
+		position absolute
+		z-index 2
+		top calc(100% + 19px)
+		left 0
+
+	&__table
+		border-right 1px solid #e5e5e5
+		overflow hidden
+
+	&__row_caption
+		border-top 1px solid #e5e5e5
+		border-bottom none
+		.shortlist__handle,
+		.shortlist__num,
+		.shortlist__details
+			border-bottom 1px solid #f0f0f0
+
+		.shortlist__details-w
+			padding-bottom 32px
+
+	&__row_header
+		.shortlist__speed-w
+			padding-bottom 25px
+
+
+	&__caption-w
+		margin 0
+		padding-top 25px
+
+	&__handle
+		border-left 1px solid #e5e5e5
+		border-right 1px solid #e5e5e5
+		cursor pointer
+
+	&__num
+		border-right 1px solid #e5e5e5
+		width 4%
+		text-align center
+
+	&__details
+		border-right 1px solid #e5e5e5
+		width 50%
+		text-align left
+
+	&__details-w
+		padding-right 40px
+		padding-left 40px
+		display flex
+		align-items center
+
+	&__details-button
+		margin-left auto
+
+	&__speed
+		width 7%
+
+
+.shortlist_empty
+	.shortlist__w
+		margin auto
+		padding-top 120px
+		padding-bottom 120px
+		max-width 520px
+		width 100%
+		text-align center
+	.shortlist__image
+		margin-bottom 90px
+		img
+			max-width 100%
+			height auto
+
+	.shortlist__sub-title
+		margin-bottom 44px
+		color #1c1c1c
+		font-size 24px
+		font-weight 500
+		letter-spacing 1px
+
+	.shortlist__text
+		margin-bottom 60px
+		color #313131
+		font-size 24px
+		font-weight 400
+		letter-spacing 1px
+		line-height 1.625
+		span
+			display block
+		a
+			color #0db6ff
+			font-weight 500
+			text-decoration none
+
+	.shortlist__icon
+		margin-left 10px
+		margin-right 10px
+		display inline-block
+		vertical-align middle
+		width 20px
+		height 20px
+		fill #0db6ff
+
+
+.shortlist__table_archived
+	border 1px solid #e5e5e5
+	.shortlist__row
+		border-top 1px solid #e5e5e5
+		border-bottom 1px solid #e5e5e5
+
+
+	.shortlist__table-title
+		border-right 1px solid #e5e5e5
+		padding-top 40px
+		padding-bottom 40px
+		width 50%
+
+
+	.shortlist__table-model
+		padding-left 34px
+		padding-right 34px
+		color #4a4a4a
+		font-size 20px
+		font-weight 500
+		text-transform uppercase
+
+	.shortlist__speed
+		border-right 1px solid #e5e5e5
+
+	.shortlist__speed-w
+		color #757575
+		font-size 20px
+		font-weight 600
+
+	.shortlist__speed_all
+		width 15%
+
+	.shortlist__speed_date
+		width 30%
+
+		.shortlist__speed-w
+			font-size 20px
+			font-weight 500
+
+.shortlist_list
+	.shortlist__top
+		margin-bottom 76px
