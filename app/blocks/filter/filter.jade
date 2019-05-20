@@ -180,7 +180,7 @@ mixin filter()
 				//- img(src='assets/images/content/cars-graph.png', srcset='assets/images/content/cars-graph@2x.png 2x, assets/images/content/cars-graph@3x.png 3x' alt='')
 
 				.filter__graph-w
-					svg.filter__graph(width='232', height='148', viewbox='0 0 232 148', fill='none', xmlns='http://www.w3.org/2000/svg')
+					svg.filter__graph(viewbox='0 0 232 148', fill='none', xmlns='http://www.w3.org/2000/svg')
 						path(d='M218 135H228V147H218V135Z', fill='#0DB6FF')
 						path(d='M196 62H206V147H196V62Z', fill='#0DB6FF')
 						path(d='M174 127H184V147H174V127Z', fill='#0DB6FF')
@@ -200,7 +200,8 @@ mixin filter()
 					ul.filter__graph-vert
 						li.filter__graph-vertitem.filter__graph-vertitem_last 60
 						li.filter__graph-vertitem 30
-						li.filter__graph-vertitem.filter__graph-vertitem_initial 0
+						li.filter__graph-vertitem.filter__graph-vertitem_initial 
+							span 0
 	
 					ul.filter__graph-horizont
 						li.filter__graph-horizontitem 58
