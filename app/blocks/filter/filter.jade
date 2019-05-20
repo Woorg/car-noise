@@ -177,9 +177,38 @@ mixin filter()
 
 
 			.filter__block-graph
-				img(src='assets/images/content/cars-graph.png', srcset='assets/images/content/cars-graph@2x.png 2x, assets/images/content/cars-graph@3x.png 3x' alt='')
+				//- img(src='assets/images/content/cars-graph.png', srcset='assets/images/content/cars-graph@2x.png 2x, assets/images/content/cars-graph@3x.png 3x' alt='')
 
+				.filter__graph-w
+					svg.filter__graph(width='232', height='148', viewbox='0 0 232 148', fill='none', xmlns='http://www.w3.org/2000/svg')
+						path(d='M218 135H228V147H218V135Z', fill='#0DB6FF')
+						path(d='M196 62H206V147H196V62Z', fill='#0DB6FF')
+						path(d='M174 127H184V147H174V127Z', fill='#0DB6FF')
+						path(d='M152 91H162V147H152V91Z', fill='#0DB6FF')
+						path(d='M130 31H140V147H130V31Z', fill='#0DB6FF')
+						path(d='M108 101H118V147H108V101Z', fill='#0DB6FF')
+						path(d='M86 79H96V147H86V79Z', fill='#0DB6FF')
+						path(d='M64 123H74V147H64V123Z', fill='#0DB6FF')
+						path(d='M42 86H52V147H42V86Z', fill='#0DB6FF')
+						path(d='M20 70H30V148H20V70Z', fill='#0DB6FF')
+						path(d='M5.5 0.5V146.5', stroke='#C5C5C5', stroke-miterlimit='50', stroke-linecap='square')
+						path(d='M231 147H6', stroke='#C5C5C5', stroke-miterlimit='50', stroke-linecap='square')
+						path(d='M0.5 57.5H4.5', stroke='#C5C5C5', stroke-miterlimit='50', stroke-linecap='square')
 
+					.filter__graph-index dB
 
-
-
+					ul.filter__graph-vert
+						li.filter__graph-vertitem.filter__graph-vertitem_last 60
+						li.filter__graph-vertitem 30
+						li.filter__graph-vertitem.filter__graph-vertitem_initial 0
+	
+					ul.filter__graph-horizont
+						li.filter__graph-horizontitem 58
+						li.filter__graph-horizontitem 60
+						li.filter__graph-horizontitem 62
+						li.filter__graph-horizontitem 64
+						li.filter__graph-horizontitem 66
+						li.filter__graph-horizontitem 68
+						li.filter__graph-horizontitem 70
+						li.filter__graph-horizontitem 72
+						li.filter__graph-horizontitem 74

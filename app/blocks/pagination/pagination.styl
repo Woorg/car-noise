@@ -12,7 +12,10 @@
 		font-weight 400
 		letter-spacing 0.55px
 		text-decoration none
-
+		tr(color .3s ease)
+		&:hover
+			color lighten(#000000, 20)
+			tr(color .3s ease)
 
 	&__item_active
 		border 2px solid #ffbc77
@@ -20,6 +23,8 @@
 		color #ffbc77
 		font-weight 500
 		border-radius 2px
+		&:hover
+			color #ffbc77
 
 
 	&__item_prev,
@@ -36,7 +41,7 @@
 			retinaSprite($pagination_arrow_group)
 			transform translate(-50%, -50%)
 		&:hover
-			opacity .8
+			opacity .6
 			tr(opacity .3s ease)
 
 	&__item_prev

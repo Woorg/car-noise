@@ -49,9 +49,11 @@
 		.filter__block-top
 			margin-bottom 0
 		.filter__block-title
+			margin-bottom 10px
 			font-size 12px
 			font-weight 400
 			letter-spacing 0.5px
+			text-transform none
 
 
 
@@ -71,10 +73,64 @@
 	&__block-graph
 		margin-top 6px
 		margin-bottom 60px
+		padding-left 23px
+		padding-right 23px
 		text-align center
+		+r($tM)
+			margin-left -23px
 		img
 			max-width 100%
 			height auto
+	
+	&__graph-w
+		position relative
+		margin auto
+		width 232px
+		height 148px
+		font-size 12px
+			
+
+	&__graph-index
+		position absolute
+		top calc(100% - 10px)
+		right -23px
+		font-weight normal
+		color #6b6f81
+		letter-spacing 0.5px
+	&__graph-vert,
+	&__graph-horizont
+		position absolute
+		color #aeaeae
+		font-weight 500
+	&__graph-vert
+		top 0
+		left -23px
+		bottom 0
+		+r($tM)
+			left -18px
+		
+	&__graph-vertitem
+		height 33%
+		font-weight 700
+	// &__graph-vertitem_last
+		
+
+	// &__graph-vertitem_initial
+		
+
+	&__graph-horizont
+		top calc(100% + 5px)
+		left 17px
+		right 0
+		display flex
+		justify-content space-between
+		
+	&__graph-horizontitem
+		// width 11%
+		text-align right
+		
+
+
 	&__close
 		resetbutton()
 		width 12px

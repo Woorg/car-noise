@@ -224,6 +224,7 @@
 				left 0
 				border 2px solid #0db6ff
 				content ''
+				background #fff 
 				width 14px
 				height 14px
 				border-radius 50%
@@ -257,10 +258,12 @@
 			&:before
 				width 18px
 				height 18px
+				background #FFF
 				border-radius 4px
 				border 1px solid #b7b7b7
 			&:before
 				border none
+				 
 
 
 	&__submit-w
@@ -302,6 +305,10 @@
 		color #0db6ff
 		font-weight 500
 		text-decoration none
+		tr(color .3s ease)
+		&:hover
+			color darken(#0db6ff, 10)
+			tr(color .3s ease)
 
 	&__text
 		color #817f7f
@@ -316,8 +323,12 @@
 		font-weight 500
 		letter-spacing 1px
 		text-decoration underline
+		tr(color .3s ease)
 		&:hover
 			text-decoration none
+			color lighten(#151515, 10)
+			tr(color .3s ease)
+			
 
 	&__forgot
 		color #000000

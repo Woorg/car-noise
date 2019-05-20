@@ -5,8 +5,10 @@
 		position relative
 		margin-bottom 42px
 		display flex
-		align-items center
+		// align-items center
+		align-items baseline
 	&__title
+		margin-bottom -1px
 		max-width 270px
 		width 100%
 		color #898ea2
@@ -124,6 +126,7 @@
 
 
 .shortlist_empty
+	padding-top 46px
 	.shortlist__w
 		margin auto
 		padding-top 120px
@@ -157,6 +160,10 @@
 			color #0db6ff
 			font-weight 500
 			text-decoration none
+			tr(color .3s ease)
+			&:hover
+				color darken(#0db6ff, 10)
+				tr(color .3s ease)
 
 	.shortlist__icon
 		margin-left 10px
@@ -209,5 +216,6 @@
 			font-weight 500
 
 .shortlist_list
+	padding-top 46px
 	.shortlist__top
 		margin-bottom 76px
