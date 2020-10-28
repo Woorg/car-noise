@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<title>Filter page dropdown</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="assets/styles/app.min.css" rel="stylesheet">
+	</head>
+
+	<body class="page page_inner">
+		<header class="header">
+			<div class="header__in container"><a href="#" class="header__logo logo"><img
+					 src="assets/images/general/logo.png"
+					 srcset="assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x"
+					 alt="myquietnewcar" class="logo__image" /></a>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item_active"><a href="#" class="nav__link">my search</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">my options (3)</a></li>
+					</ul>
+				</nav>
+				<div class="header__h-user h-user"><a href="#" class="h-user__link"></a>
+					<div class="h-user__email"><span class="h-user__email-val">vanone@gmail.com</span></div>
+					<div class="h-user__user-pic"><img src="assets/images/content/user.jpg" alt="" /></div>
+					<ul class="h-user__dropdown">
+						<li class="h-user__dropdown-item h-user__dropdown-item_active"><a href="#"
+							 class="h-user__dropdown-link">Settings</a></li>
+						<li class="h-user__dropdown-item"><a href="#" class="h-user__dropdown-link">Archived</a></li>
+						<li class="h-user__dropdown-item"><a href="#" class="h-user__dropdown-link">Donate</a></li>
+						<li class="h-user__dropdown-item"><a href="#" class="h-user__dropdown-link">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main container page__inner">
+			<div class="inner-page">
+				<div class="content">
+					<div class="results">
+						<div class="results__notfound"><svg width="186" height="186" viewbox="0 0 186 186" fill="none"
+							 xmlns="http://www.w3.org/2000/svg" class="results__notfound-icon">
+								<path
+								 d="M177.268 177.265C176.539 177.994 175.674 178.572 174.722 178.967C173.769 179.361 172.749 179.564 171.718 179.563C170.687 179.566 169.667 179.365 168.714 178.971C167.762 178.577 166.898 177.998 166.171 177.268L118.973 130.066L130.066 118.972L177.264 166.174C178.735 167.644 179.562 169.638 179.563 171.718C179.563 173.798 178.738 175.793 177.268 177.264V177.265ZM72.8398 139.357C36.1208 139.316 6.36484 109.559 6.32384 72.84C6.32384 36.104 36.1038 6.32404 72.8398 6.32404C109.576 6.32404 139.357 36.104 139.357 72.84C139.357 109.576 109.577 139.357 72.8398 139.357ZM181.64 161.8L133.18 113.336C155.583 79.974 146.7 34.767 113.337 12.364C79.9738 -10.04 34.7678 -1.15596 12.3638 32.206C-10.0392 65.568 -1.15616 110.775 32.2058 133.178C56.7398 149.654 88.8018 149.654 113.336 133.178L161.796 181.642C167.276 187.122 176.16 187.122 181.639 181.642C187.118 176.163 187.119 167.279 181.639 161.8H181.64Z"
+								 fill="#EDEDED"></path>
+								<path
+								 d="M74.4638 12.53L74.2998 18.717C82.2081 18.9217 89.9749 20.8613 97.051 24.3985C104.127 27.9357 110.34 32.9842 115.25 39.187L120.094 35.339C114.622 28.4284 107.699 22.8037 99.8142 18.8624C91.9296 14.9211 83.2756 12.7594 74.4638 12.53V12.53Z"
+								 fill="#EDEDED"></path>
+								<path
+								 d="M124.605 41.8501L119.3 45.0331C120.453 46.9484 121.486 48.9332 122.394 50.9761L128.036 48.4761C127.029 46.1993 125.884 43.9864 124.606 41.8501H124.605Z"
+								 fill="#EDEDED"></path>
+							</svg>
+							<h1 class="results__notfound-title">We Didn’t Find Anything</h1>
+							<div class="results__notfound-text">
+								<p>Try removing a filter or changing your options to find your perfect car.</p>
+							</div><a href="#" class="results__notfound-link">Request Other Models</a>
+						</div>
+					</div>
+				</div>
+				<aside class="sidebar">
+					<div class="filter">
+						<div class="filter__top">
+							<h2 class="filter__title">Filter By</h2><button class="filter__reset">Reset All</button>
+						</div>
+						<div class="filter__block filter__block_years">
+							<div class="filter__block-top">
+								<div class="filter__block-title">YEARS</div><button class="filter__close">
+									<div class="filter__close-text">Close</div><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg>
+								</button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2019</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2018</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2017</span></label></div>
+								</div>
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">2016</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">2015</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2014</span></label></div>
+								</div>
+							</div><button class="filter__less">Less</button>
+						</div>
+						<div class="filter__block filter__block_make">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Make</div><button class="filter__close"><span
+									 class="filter__close-text">Close</span><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg></button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Toyota</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">Mazda</span></label></div>
+								</div>
+							</div>
+							<div class="filter__select-w">
+								<div class="filter__field-select"><select name="" class="filter__select">
+										<option value="select-0">New data request</option>
+										<option value="select-1">List Option 1</option>
+										<option value="select-2">List Option 2</option>
+										<option value="select-3">List Option 3</option>
+										<option value="select-4">List Option 4</option>
+									</select>
+									<div class="filter__select">Select Make</div>
+									<div class="filter__select-list">
+										<div class="filter__select-item filter__select-item_active">Select Make</div>
+										<div class="filter__select-item">List Option 1</div>
+										<div class="filter__select-item">List Option 2</div>
+										<div class="filter__select-item">List Option 3</div>
+										<div class="filter__select-item">List Option 4</div>
+									</div>
+								</div><button class="filter__add">add</button>
+							</div>
+						</div>
+						<div class="filter__block filter__block_class">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Class</div><button class="filter__close"><span
+									 class="filter__close-text">Close</span><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg></button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Economy</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">Mid-Size</span></label></div>
+								</div>
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Compact</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">SUV</span></label></div>
+								</div>
+							</div><button class="filter__more">More</button>
+						</div>
+						<div class="filter__block filter__block_engine">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Engine</div><button class="filter__close"><span
+									 class="filter__close-text">Close</span><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg></button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Petrol</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">Hybrid</span></label></div>
+								</div>
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Diesel</span></label></div>
+								</div>
+							</div><button class="filter__more">More</button>
+						</div>
+						<div class="filter__block filter__block_cars">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Cars</div>
+							</div>
+							<div class="filter__block-graph">
+								<div class="filter__graph-w"><svg viewbox="0 0 232 148" fill="none"
+									 xmlns="http://www.w3.org/2000/svg" class="filter__graph">
+										<path d="M218 135H228V147H218V135Z" fill="#0DB6FF"></path>
+										<path d="M196 62H206V147H196V62Z" fill="#0DB6FF"></path>
+										<path d="M174 127H184V147H174V127Z" fill="#0DB6FF"></path>
+										<path d="M152 91H162V147H152V91Z" fill="#0DB6FF"></path>
+										<path d="M130 31H140V147H130V31Z" fill="#0DB6FF"></path>
+										<path d="M108 101H118V147H108V101Z" fill="#0DB6FF"></path>
+										<path d="M86 79H96V147H86V79Z" fill="#0DB6FF"></path>
+										<path d="M64 123H74V147H64V123Z" fill="#0DB6FF"></path>
+										<path d="M42 86H52V147H42V86Z" fill="#0DB6FF"></path>
+										<path d="M20 70H30V148H20V70Z" fill="#0DB6FF"></path>
+										<path d="M5.5 0.5V146.5" stroke="#C5C5C5" stroke-miterlimit="50"
+										 stroke-linecap="square"></path>
+										<path d="M231 147H6" stroke="#C5C5C5" stroke-miterlimit="50"
+										 stroke-linecap="square"></path>
+										<path d="M0.5 57.5H4.5" stroke="#C5C5C5" stroke-miterlimit="50"
+										 stroke-linecap="square"></path>
+									</svg>
+									<div class="filter__graph-index">dB</div>
+									<ul class="filter__graph-vert">
+										<li class="filter__graph-vertitem filter__graph-vertitem_last">60</li>
+										<li class="filter__graph-vertitem">30</li>
+										<li class="filter__graph-vertitem filter__graph-vertitem_initial">
+											<span>0</span></li>
+									</ul>
+									<ul class="filter__graph-horizont">
+										<li class="filter__graph-horizontitem">58</li>
+										<li class="filter__graph-horizontitem">60</li>
+										<li class="filter__graph-horizontitem">62</li>
+										<li class="filter__graph-horizontitem">64</li>
+										<li class="filter__graph-horizontitem">66</li>
+										<li class="filter__graph-horizontitem">68</li>
+										<li class="filter__graph-horizontitem">70</li>
+										<li class="filter__graph-horizontitem">72</li>
+										<li class="filter__graph-horizontitem">74</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__in container"><a href="#" class="footer__logo logo"><img
+					 src="assets/images/general/logo-black.png"
+					 srcset="assets/images/general/logo-black@2x.png 2x, assets/images/general/logo-black@3x.png 3x"
+					 alt="myquietnewcar" class="logo__image" /></a>
+				<nav class="footer__nav nav nav_secondary">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Request adding data</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Privacy Policy</a></li>
+					</ul>
+				</nav>
+				<div class="footer__copyright">© 2019</div>
+			</div>
+		</footer>
+		<script src="assets/scripts/app.min.js"></script>
+	</body>
+
+</html>

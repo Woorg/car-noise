@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<title>Filter page dropdown</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="assets/styles/app.min.css" rel="stylesheet">
+	</head>
+
+	<body class="page page_inner">
+		<header class="header">
+			<div class="header__in container"><a href="#" class="header__logo logo"><img
+					 src="assets/images/general/logo.png"
+					 srcset="assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x"
+					 alt="myquietnewcar" class="logo__image" /></a>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item_active"><a href="#" class="nav__link">my search</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">my options (3)</a></li>
+					</ul>
+				</nav>
+				<div class="header__h-user h-user"><a href="#" class="h-user__auth">Sign up</a><a href="#"
+					 class="h-user__auth h-user__auth_active">Sign in</a></div>
+			</div>
+		</header>
+		<main class="main container page__inner">
+			<div class="inner-page">
+				<div class="content">
+					<div class="results">
+						<table class="results__table">
+							<tr class="results__row results__row_caption">
+								<td colspan="2">
+									<div class="results__caption"></div>
+								</td>
+								<td colspan="6" class="results__caption">
+									<div class="results__caption-w">Noise Level, dB</div>
+								</td>
+							</tr>
+							<tr class="results__row results__row_header">
+								<th class="results__fav">&nbsp;</th>
+								<th class="results__details">
+									<div class="results__details-w">Details</div>
+								</th>
+								<th class="results__speed results__speed_idle">
+									<div class="results__speed-w">Idle</div>
+								</th>
+								<th class="results__speed results__speed_first">
+									<div class="results__speed-w">60 km/h</div>
+								</th>
+								<th data-noise-title="Noise Level, dB" class="results__speed results__speed_second">
+									<div class="results__speed-w">80 km/h</div>
+								</th>
+								<th class="results__speed results__speed_third">
+									<div class="results__speed-w">100 km/h</div>
+								</th>
+								<th class="results__speed results__speed_fourth">
+									<div class="results__speed-w">120 km/h</div>
+								</th>
+								<th class="results__speed results__speed_fifth">
+									<div class="results__speed-w">140 km/h</div>
+								</th>
+							</tr>
+							<tbody class="results__table-body">
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Honda Civic / 2018</div>
+											<div class="results__details-spec">500e</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">54.5</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">50.7</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">56.0</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">61.1</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">61.0</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">66.5</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon results__fav-icon_active">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Hyundai Genesis / 2008</div>
+											<div class="results__details-spec">Diesel</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">50.7</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">51.7</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">56.2</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">60.9</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">62.0</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">64.1</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon results__fav-icon_active">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Dacia Duster / 2013</div>
+											<div class="results__details-spec">AMG Roadster</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">50.7</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">50.7</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">57.3</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">57.3</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">63.1</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">66.0</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Dacia Sandero / 2014</div>
+											<div class="results__details-spec">1.2</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">48.4</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">48.9</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">57.4</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">60.9</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">63.6</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">66.0</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">BMW X5 / 2009</div>
+											<div class="results__details-spec">2.0 TDI Stationcar</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">48.0</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">50.7</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">53.8</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">59.9</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">60.4</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">66.0</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Ford Fiesta / 2016</div>
+											<div class="results__details-spec">2.0 TFSI</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">51.0</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">50.3</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">53.8</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">59.9</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">63.6</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">66.5</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Hyundai Kona / 2018</div>
+											<div class="results__details-spec">1.2 Coupe</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">54.5</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">54.1</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">60.2</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">60.7</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">62.8</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">63.8</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Opel Astra / 2018</div>
+											<div class="results__details-spec">2.8 CRD</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">51.3</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">51.1</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">53.4</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">59.4</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">63.6</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">67.0</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Hyundai Tucson / 2010</div>
+											<div class="results__details-spec">1.0</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">48.0</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">48.9</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">54.9</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">61.4</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">63.1</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">65.2</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Volvo V50 / 2017</div>
+											<div class="results__details-spec">2.0d</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">48.0</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">54.6</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">56.2</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">61.2</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">62.8</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">66.0</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">BMW M2 / 2014</div>
+											<div class="results__details-spec">2.0 TDI Stationcar</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">48.6</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">51.7</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">56.2</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">59.6</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">62.7</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">65.3</div>
+									</td>
+								</tr>
+								<tr class="results__row">
+									<td class="results__fav"><svg class="results__fav-icon">
+											<use xlink:href="assets/images/icon.svg#icon_fav-icon"></use></svg></td>
+									<td class="results__details">
+										<div class="results__details-w">
+											<div class="results__details-model">Jeep Renegade / 2008</div>
+											<div class="results__details-spec">GTI</div>
+										</div>
+									</td>
+									<td class="results__speed results__speed_idle">
+										<div class="results__speed-w">50.0</div>
+									</td>
+									<td class="results__speed results__speed_first">
+										<div class="results__speed-w">51.0</div>
+									</td>
+									<td class="results__speed results__speed_second">
+										<div class="results__speed-w">56.7</div>
+									</td>
+									<td class="results__speed results__speed_third">
+										<div class="results__speed-w">59.6</div>
+									</td>
+									<td class="results__speed results__speed_fourth">
+										<div class="results__speed-w">62.0</div>
+									</td>
+									<td class="results__speed results__speed_fifth">
+										<div class="results__speed-w">65.5</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<nav class="pagination results__pagination"><a href="#"
+							 class="pagination__item pagination__item_prev">Back</a><a href="#"
+							 class="pagination__item pagination__item_active">1</a><a href="#"
+							 class="pagination__item">2</a><span
+							 class="pagination__item pagination__item_sep">…</span><a href="#"
+							 class="pagination__item">4</a><a href="#" class="pagination__item">5</a><a href="#"
+							 class="pagination__item pagination__item_next">Next</a></nav>
+					</div>
+				</div>
+				<aside class="sidebar">
+					<div class="filter">
+						<div class="filter__top">
+							<h2 class="filter__title">Filter By</h2><button class="filter__reset">Reset All</button>
+						</div>
+						<div class="filter__block filter__block_years">
+							<div class="filter__block-top">
+								<div class="filter__block-title">YEARS</div><button class="filter__close">
+									<div class="filter__close-text">Close</div><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg>
+								</button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2019</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2018</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2017</span></label></div>
+								</div>
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">2016</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">2015</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">2014</span></label></div>
+								</div>
+							</div><button class="filter__less">Less</button>
+						</div>
+						<div class="filter__block filter__block_make">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Make</div><button class="filter__close"><span
+									 class="filter__close-text">Close</span><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg></button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Toyota</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">Mazda</span></label></div>
+								</div>
+							</div>
+							<div class="filter__select-w">
+								<div class="filter__field-select"><select name="" class="filter__select">
+										<option value="select-0">New data request</option>
+										<option value="select-1">List Option 1</option>
+										<option value="select-2">List Option 2</option>
+										<option value="select-3">List Option 3</option>
+										<option value="select-4">List Option 4</option>
+									</select>
+									<div class="filter__select">Select Make</div>
+									<div class="filter__select-list">
+										<div class="filter__select-item filter__select-item_active">Select Make</div>
+										<div class="filter__select-item">List Option 1</div>
+										<div class="filter__select-item">List Option 2</div>
+										<div class="filter__select-item">List Option 3</div>
+										<div class="filter__select-item">List Option 4</div>
+									</div>
+								</div><button class="filter__add">add</button>
+							</div>
+						</div>
+						<div class="filter__block filter__block_class">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Class</div><button class="filter__close"><span
+									 class="filter__close-text">Close</span><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg></button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Economy</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">Mid-Size</span></label></div>
+								</div>
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Compact</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">SUV</span></label></div>
+								</div>
+							</div><button class="filter__more">More</button>
+						</div>
+						<div class="filter__block filter__block_engine">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Engine</div><button class="filter__close"><span
+									 class="filter__close-text">Close</span><svg class="filter__close-icon">
+										<use xlink:href="assets/images/icon.svg#icon_close-icon"></use></svg></button>
+							</div>
+							<div class="filter__check-w">
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Petrol</span></label></div>
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" checked="checked" class="filter__check-input" /><span
+											 class="filter__check-text">Hybrid</span></label></div>
+								</div>
+								<div class="filter__check-col">
+									<div class="filter__check"><label class="filter__check-label"><input type="checkbox"
+											 value="" name="year" class="filter__check-input" /><span
+											 class="filter__check-text">Diesel</span></label></div>
+								</div>
+							</div><button class="filter__more">More</button>
+						</div>
+						<div class="filter__block filter__block_cars">
+							<div class="filter__block-top">
+								<div class="filter__block-title">Cars</div>
+							</div>
+							<div class="filter__block-graph">
+								<div class="filter__graph-w"><svg viewbox="0 0 232 148" fill="none"
+									 xmlns="http://www.w3.org/2000/svg" class="filter__graph">
+										<path d="M218 135H228V147H218V135Z" fill="#0DB6FF"></path>
+										<path d="M196 62H206V147H196V62Z" fill="#0DB6FF"></path>
+										<path d="M174 127H184V147H174V127Z" fill="#0DB6FF"></path>
+										<path d="M152 91H162V147H152V91Z" fill="#0DB6FF"></path>
+										<path d="M130 31H140V147H130V31Z" fill="#0DB6FF"></path>
+										<path d="M108 101H118V147H108V101Z" fill="#0DB6FF"></path>
+										<path d="M86 79H96V147H86V79Z" fill="#0DB6FF"></path>
+										<path d="M64 123H74V147H64V123Z" fill="#0DB6FF"></path>
+										<path d="M42 86H52V147H42V86Z" fill="#0DB6FF"></path>
+										<path d="M20 70H30V148H20V70Z" fill="#0DB6FF"></path>
+										<path d="M5.5 0.5V146.5" stroke="#C5C5C5" stroke-miterlimit="50"
+										 stroke-linecap="square"></path>
+										<path d="M231 147H6" stroke="#C5C5C5" stroke-miterlimit="50"
+										 stroke-linecap="square"></path>
+										<path d="M0.5 57.5H4.5" stroke="#C5C5C5" stroke-miterlimit="50"
+										 stroke-linecap="square"></path>
+									</svg>
+									<div class="filter__graph-index">dB</div>
+									<ul class="filter__graph-vert">
+										<li class="filter__graph-vertitem filter__graph-vertitem_last">60</li>
+										<li class="filter__graph-vertitem">30</li>
+										<li class="filter__graph-vertitem filter__graph-vertitem_initial">
+											<span>0</span></li>
+									</ul>
+									<ul class="filter__graph-horizont">
+										<li class="filter__graph-horizontitem">58</li>
+										<li class="filter__graph-horizontitem">60</li>
+										<li class="filter__graph-horizontitem">62</li>
+										<li class="filter__graph-horizontitem">64</li>
+										<li class="filter__graph-horizontitem">66</li>
+										<li class="filter__graph-horizontitem">68</li>
+										<li class="filter__graph-horizontitem">70</li>
+										<li class="filter__graph-horizontitem">72</li>
+										<li class="filter__graph-horizontitem">74</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__in container"><a href="#" class="footer__logo logo"><img
+					 src="assets/images/general/logo-black.png"
+					 srcset="assets/images/general/logo-black@2x.png 2x, assets/images/general/logo-black@3x.png 3x"
+					 alt="myquietnewcar" class="logo__image" /></a>
+				<nav class="footer__nav nav nav_secondary">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Request adding data</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Privacy Policy</a></li>
+					</ul>
+				</nav>
+				<div class="footer__copyright">© 2019</div>
+			</div>
+		</footer>
+		<script src="assets/scripts/app.min.js"></script>
+	</body>
+
+</html>
